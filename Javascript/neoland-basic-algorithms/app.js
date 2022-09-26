@@ -35,7 +35,7 @@ const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};
 
 globalBasePrice = 25000;
 car1.finalPrice = car1.basePrice + globalBasePrice;
-car2.finalPrice += globalBasePrice;
+car2.finalPrice = car2.basePrice + globalBasePrice;
 console.log(car2.basePrice);
 
 //Iteracion #3 : Operadores
