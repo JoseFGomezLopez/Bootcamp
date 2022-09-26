@@ -34,7 +34,30 @@ const car1 = {name: 'BMW m&m', basePrice: 50000, finalPrice: 60000};
 const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};
 
 globalBasePrice = 25000;
-car1.basePrice = car1.basePrice + globalBasePrice;
-car2.basePrice += globalBasePrice;
+car1.finalPrice = car1.basePrice + globalBasePrice;
+car2.finalPrice += globalBasePrice;
 console.log(car2.basePrice);
-// 
+
+//Iteracion #3 : Operadores
+//1.1
+console.log(10*5);
+//1.2
+let division = 10/2;
+console.log(division);
+//1.3
+let modulo = 15%9;
+console.log(modulo);
+//1.4
+let o = 15;
+let p = 10;
+let j = 5;
+
+o = p + j;
+//1.5
+let i = 50;
+let c = 10;
+let m = 5;
+
+i = c * m;
+
+
