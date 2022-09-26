@@ -7,4 +7,5 @@ x = null; // Null
 x = undefined; //Undefinded
 x = {name : "Jose", surname : "Gomez"}; // Object
 x = [1,2,3,4,5,6]; //Array
+x = new Array["Hola","adios","hasta mañana","hasta luego",null,true,2,3,undefined]
 
