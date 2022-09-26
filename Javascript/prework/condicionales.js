@@ -17,3 +17,10 @@ isLogged("Pepe");
 isLogged();
 isLogged(true);
 isLogged(false);
+  
+const age = 20;
+if(edad >= 18){
+    console.log("Enhorabuena, puedes conducir.");
+}else{
+    console.log("Eres menor de edad para conducir.")
+}
