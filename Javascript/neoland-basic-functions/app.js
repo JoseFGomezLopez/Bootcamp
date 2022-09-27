@@ -63,6 +63,27 @@ function averageWord(param) {
       continue;
     }
   }
-  return sumatorio;
+  return sumatorio/param.length;
 }
 averageWord(mixedElements);
+
+//Iteracion 6 : Valores duplicados
+
+const duplicates = [
+  'sushi',
+  'pizza',
+  'burger',
+  'potatoe',
+  'pasta',
+  'ice-cream',
+  'pizza',
+  'chicken',
+  'onion rings',
+  'pasta',
+  'soda'
+];
+function removeDuplicates(param) {
+   var sinDuplicar = new Set(param);
+    return sinDuplicar.values();
+}
+removeDuplicates(duplicates);
