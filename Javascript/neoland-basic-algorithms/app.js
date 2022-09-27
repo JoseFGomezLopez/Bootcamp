@@ -152,10 +152,11 @@ for (let i = 0; i <= 9; i++) {
         console.log(i)
     };
 }
+
 //Ejercicio 1.3
 
-for (let j = 0; j < 10; j++) {
-    if(j < 9){
+for (let j = 0; j <= 10; j++) {
+    if(j <= 9){
         console.log("Intentando dormir")
     }else{
         console.log("Dormido!.")
