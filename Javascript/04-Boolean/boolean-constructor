@@ -1,0 +1,6 @@
+const flag = new Boolean();
+console.log(flag);
+
+let flagTwo;
+console.log(flagTwo);
+
