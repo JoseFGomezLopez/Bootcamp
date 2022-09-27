@@ -1,6 +1,6 @@
 //Funciones Básicas
 
-//Ejercicio 1.1
+//Iteracion 2 : devolver el numero maximo pasado como argumento
 
 function sum(numberOne, numberTwo) {
   return numberOne > numberTwo ? numberOne : numberTwo;
@@ -87,3 +87,31 @@ function removeDuplicates(param) {
     return sinDuplicar.values();
 }
 removeDuplicates(duplicates);
+
+//Iteracion 7 : Buscar un valor en un array
+
+const nameFinder = [
+  'Peter',
+  'Steve',
+  'Tony',
+  'Natasha',
+  'Clint',
+  'Logan',
+  'Xabier',
+  'Bruce',
+  'Peggy',
+  'Jessica',
+  'Marc'
+];
+function finderName(param,valueParam) {
+   for (let i = 0; i < param.length; i++) {
+     if (param[i] == valueParam) {
+      console.log(`El valor que buscas está en la posicion ${i} : ${param[i]}`);
+      break; 
+    } else if(param[i] != valueParam && param.length-1 == i){
+      console.log(`El valor no existe en el array`)
+     }
+  
+   }   
+}
+finderName(nameFinder,"Clint");
