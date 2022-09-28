@@ -7,20 +7,20 @@ function sum(numberOne, numberTwo) {
 }
 
 //Ejercicio 1.2
-/*
+
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 function findLongestWord(param) {
-    let largo = param[0];
-    let theLargestWord = "";
+    //let largo = param[0];
+    let theLargestWord = " ";
    for (let i = 0; i < param.length; i++) {
-    if(param[i].lenght > largo.length){
-        theLargestWord = param[i];   
+    if(param[i+1].length < param.length-1 && param[i].lenght > param[i+1].length){
+        theLargestWord += param[i];   
     }
    }
 return console.log(theLargestWord);
 }
 findLongestWord(avengers);
-*/
+
 //Iteracion 3
 
 const numbers = [1, 2, 3, 5, 45, 37, 58];
@@ -57,61 +57,89 @@ function averageWord(param) {
   for (let i = 0; i < param.length; i++) {
     if (typeof param[i] == "string") {
       sumatorio += param[i].length;
-    } else if(typeof param[i] == "number"){
+    } else if (typeof param[i] == "number") {
       sumatorio += param[i];
-    } else{ 
+    } else {
       continue;
     }
   }
-  return sumatorio/param.length;
+  return sumatorio / param.length;
 }
 averageWord(mixedElements);
 
 //Iteracion 6 : Valores duplicados
 
 const duplicates = [
-  'sushi',
-  'pizza',
-  'burger',
-  'potatoe',
-  'pasta',
-  'ice-cream',
-  'pizza',
-  'chicken',
-  'onion rings',
-  'pasta',
-  'soda'
+  "sushi",
+  "pizza",
+  "burger",
+  "potatoe",
+  "pasta",
+  "ice-cream",
+  "pizza",
+  "chicken",
+  "onion rings",
+  "pasta",
+  "soda",
 ];
 function removeDuplicates(param) {
-   var sinDuplicar = new Set(param);
-    return sinDuplicar.values();
+  var sinDuplicar = new Set(param);
+  return sinDuplicar.values();
 }
 removeDuplicates(duplicates);
 
 //Iteracion 7 : Buscar un valor en un array
 
 const nameFinder = [
-  'Peter',
-  'Steve',
-  'Tony',
-  'Natasha',
-  'Clint',
-  'Logan',
-  'Xabier',
-  'Bruce',
-  'Peggy',
-  'Jessica',
-  'Marc'
+  "Peter",
+  "Steve",
+  "Tony",
+  "Natasha",
+  "Clint",
+  "Logan",
+  "Xabier",
+  "Bruce",
+  "Peggy",
+  "Jessica",
+  "Marc",
 ];
-function finderName(param,valueParam) {
-   for (let i = 0; i < param.length; i++) {
-     if (param[i] == valueParam) {
+function finderName(param, valueParam) {
+  for (let i = 0; i < param.length; i++) {
+    if (param[i] == valueParam) {
       console.log(`El valor que buscas está en la posicion ${i} : ${param[i]}`);
-      break; 
-    } else if(param[i] != valueParam && param.length-1 == i){
-      console.log(`El valor no existe en el array`)
-     }
-  
-   }   
+      break;
+    } else if (param[i] != valueParam && param.length - 1 == i) {
+      console.log(`El valor no existe en el array`);
+    }
+  }
 }
-finderName(nameFinder,"Clint");
+finderName(nameFinder, "Clint");
+
+// Iteracion 8 : Contador de iteraciones
+
+const counterWords = [
+  "code",
+  "repeat",
+  "eat",
+  "sleep",
+  "code",
+  "enjoy",
+  "sleep",
+  "code",
+  "enjoy",
+  "upgrade",
+  "code",
+];
+function repeatCounter(param) {
+  let counter = 0;
+  for (let i = 0; i < param.length; i++) {
+    for (let j = param.length; j >= 0; j--) {
+      if (param[i] == param[j]) {
+        counter++;
+       // console.log(`El valor ${param[i]} esta repetido ${counter} veces`);
+                 
+      }
+    }
+  }
+}
+repeatCounter(counterWords);
