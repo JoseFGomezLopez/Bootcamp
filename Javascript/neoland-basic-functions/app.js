@@ -1,44 +1,67 @@
 //Funciones Básicas
 
-//Iteracion 2 : devolver el numero maximo pasado como argumento
+//Iteracion 1 : devolver el numero maximo pasado como argumento
 
-function sum(numberOne, numberTwo) {
+function maxNumber(numberOne, numberTwo) {
   return numberOne > numberTwo ? numberOne : numberTwo;
 }
 
-//Ejercicio 1.2
+let greater = maxNumber(3, 2);
+console.log(greater);
 
-const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
-function findLongestWord(param) {
-    //let largo = param[0];
-    let theLargestWord = " ";
-   for (let i = 0; i < param.length; i++) {
-    if(param[i+1].length < param.length-1 && param[i].lenght > param[i+1].length){
-        theLargestWord += param[i];   
+//Iteracion #2 Buscar la palabra mas larga de un array
+
+const avengers = [
+  "Hulk",
+  "Thor",
+  "IronMan",
+  "Captain A.",
+  "Spiderman",
+  "Captain M.",
+];
+
+const findLongestWord = (arr) => {
+  let theLargestWord = " ";
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > theLargestWord.length) {
+      theLargestWord = arr[i];
     }
-   }
-return console.log(theLargestWord);
-}
+  }
+  return console.log(theLargestWord);
+};
 findLongestWord(avengers);
 
-//Iteracion 3
+//Iteracion 3 Sumar todos los elementos number de un array
 
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
+const sum = (param) => {
+  let sumatorio = 0;
+  for (let i = 0; i < param.length; i++) {
+    sumatorio += param[i];
+  }
+  return sumatorio;
+};
+var sumAll = sum(numbers);
+console.log(sumAll);
+
+/*
 function sumAll(arr) {
   let sumatorio = 0;
-
+ 
   for (let i = 0; i < arr.length; i++) {
     sumatorio += arr[i];
   }
   return sumatorio;
 }
 sumAll(numbers);
+*/
 
 //Iteracion 4 : Calcular el promedio
 
 const numbers2 = [12, 21, 38, 5, 45, 37, 6];
-function average(param) {
+
+const average = (param) => {
   let sumatorio = 0;
   let promedio = 0;
   for (let i = 0; i < param.length; i++) {
@@ -46,13 +69,14 @@ function average(param) {
   }
   promedio = sumatorio / param.length;
   return promedio;
-}
-average(numbers2);
+};
+const promedio = average(numbers2);
+console.log(promedio);
 
 //Iteracion 5 : Calcular promedio de Strings
 
 const mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
-function averageWord(param) {
+const averageWord = (param) => {
   let sumatorio = 0;
   for (let i = 0; i < param.length; i++) {
     if (typeof param[i] == "string") {
@@ -64,8 +88,9 @@ function averageWord(param) {
     }
   }
   return sumatorio / param.length;
-}
-averageWord(mixedElements);
+};
+const average2 = averageWord(mixedElements);
+console.log(average2);
 
 //Iteracion 6 : Valores duplicados
 
@@ -103,17 +128,17 @@ const nameFinder = [
   "Jessica",
   "Marc",
 ];
-function finderName(param, valueParam) {
+const Findering = (param, valueParam) => {
   for (let i = 0; i < param.length; i++) {
-    if (param[i] == valueParam) {
+    if (param[i] === valueParam) {
       console.log(`El valor que buscas está en la posicion ${i} : ${param[i]}`);
       break;
     } else if (param[i] != valueParam && param.length - 1 == i) {
       console.log(`El valor no existe en el array`);
     }
   }
-}
-finderName(nameFinder, "Clint");
+};
+Findering(nameFinder, "Clint");
 
 // Iteracion 8 : Contador de iteraciones
 
@@ -130,16 +155,8 @@ const counterWords = [
   "upgrade",
   "code",
 ];
-function repeatCounter(param) {
+function repeatCounter(elements) {
   let counter = 0;
-  for (let i = 0; i < param.length; i++) {
-    for (let j = param.length; j >= 0; j--) {
-      if (param[i] == param[j]) {
-        counter++;
-       // console.log(`El valor ${param[i]} esta repetido ${counter} veces`);
-                 
-      }
-    }
-  }
+ for
 }
-repeatCounter(counterWords);
+
