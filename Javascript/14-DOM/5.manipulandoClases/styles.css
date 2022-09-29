@@ -1,0 +1,16 @@
+.rojo{
+    color : red;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.azul{
+    color: blue;
+}
+
+.dark{
+    background-color: black;
+    color: azure;
+}

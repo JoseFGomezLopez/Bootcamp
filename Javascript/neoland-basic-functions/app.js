@@ -107,10 +107,20 @@ const duplicates = [
   "pasta",
   "soda",
 ];
-function removeDuplicates(param) {
-  var sinDuplicar = new Set(param);
-  return sinDuplicar.values();
-}
+// function removeDuplicates(param) {
+//   var sinDuplicar = new Set(param);
+//   return sinDuplicar.values();
+// }
+const removeDuplicates = (initialArray) => {
+  //const newArray = new Array(initalArray);
+  for (let i = 0; i < initialArray.length; i++) {
+    if (initialArray.includes(initialArray[i])) {
+      initialArray.shift();
+    }
+  }
+  return initialArray;
+};
+
 removeDuplicates(duplicates);
 
 //Iteracion 7 : Buscar un valor en un array
@@ -155,8 +165,20 @@ const counterWords = [
   "upgrade",
   "code",
 ];
-function repeatCounter(elements) {
+const repeatCounter = (initialArray) => {
   let counter = 0;
- for
-}
+  // const newSet = new Set(initialArray);
+  // newArray = Array.from(newSet);
+  const newArray = removeDuplicates(counterWords);
 
+  for (let i = 0; i < newArray.length; i++) {
+    for (let j = 0; j < initialArray.length; j++) {
+      if (newArray[i] == initialArray[j]) {
+        counter++;
+      }
+    }
+    console.log(`${newArray[i]} : ${counter}`);
+    counter = 0;
+  }
+};
+repeatCounter(counterWords);
