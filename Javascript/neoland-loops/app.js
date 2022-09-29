@@ -37,21 +37,43 @@ const approvedSearcher = (initialArray) => {
       (initialArray[i].T2 == true || initialArray[i].T3 == true)
     ) {
       initialArray[i].isApproved = true;
-      console.log(`${initialArray[i].name} : ${initialArray[i].isApproved}`);
+      console.log(
+        `${initialArray[i].name}, APROBADO: ${initialArray[i].isApproved}`
+      );
     } else if (
       initialArray[i].T3 == true &&
       (initialArray[i].T2 == true || initialArray[i].T1 == true)
     ) {
       initialArray[i].isApproved = true;
-      console.log(`${initialArray[i].name} : ${initialArray[i].isApproved}`);
+      console.log(
+        `${initialArray[i].name}, APROBADO: ${initialArray[i].isApproved}`
+      );
     } else if (
       initialArray[i].T2 == true &&
       (initialArray[i].T3 == true || initialArray[i].T1 == true)
     ) {
       initialArray[i].isApproved = true;
-      console.log(`${initialArray[i].name} : ${initialArray[i].isApproved}`);
+      console.log(
+        `${initialArray[i].name}, APROBADO: ${initialArray[i].isApproved}`
+      );
     }
   }
 };
 
 approvedSearcher(alumns);
+
+//Iteración #3: Probando For...of
+/* Usa un bucle forof para recorrer todos los destinos del array. 
+Imprime en un ***console.log*** sus valores.*/
+
+const placesToTravel = [
+  "Japon",
+  "Venecia",
+  "Murcia",
+  "Santander",
+  "Filipinas",
+  "Madagascar",
+];
+for (const place of placesToTravel) {
+  console.log(place);
+}
