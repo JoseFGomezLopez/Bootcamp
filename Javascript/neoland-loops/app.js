@@ -83,14 +83,39 @@ for (const place of placesToTravel) {
 consola los datos del alienígena.. Puedes usar este objeto: */
 
 const alien = {
-    name: 'Wormuck',
-    race: 'Cucusumusu',
-    planet: 'Eden',
-    weight: '259kg'
+  name: "Wormuck",
+  race: "Cucusumusu",
+  planet: "Eden",
+  weight: "259kg",
 };
 
 for (const key in alien) {
-        console.log(`${key} : ${alien[key]}`)
-    }
+  console.log(`${key} : ${alien[key]}`);
+}
 
+//Iteración #5: Probando For
+/* Usa un bucle for para recorrer todos los destinos del array y elimina los 
+elementos que tengan el id 11 y 40.
+Imprime en un console log el array. Puedes usar este array:*/
+
+const placesToTravel2 = [
+  { id: 5, name: "Japan" },
+  { id: 11, name: "Venecia" },
+  { id: 23, name: "Murcia" },
+  { id: 40, name: "Santander" },
+  { id: 44, name: "Filipinas" },
+  { id: 59, name: "Madagascar" },
+];
+// const newArray = placesToTravel2.filter(place => placesToTravel2.id !== 11 );
+// console.log(newArray);
+ let newArray = [];
+for (let i = 0; i < placesToTravel2.length; i++) {
+    
+        if(placesToTravel2[i].id == 11 || placesToTravel2[i].id == 40){
+           placesToTravel2.splice([i],1); 
+        
+    };
+}
+
+console.log(placesToTravel2);
 
