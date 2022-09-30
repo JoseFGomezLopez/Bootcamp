@@ -201,3 +201,23 @@ const dadoDeRoll = (nOfFaces) => {
   console.log(tirada);
 };
 dadoDeRoll(2);
+
+//Iteracion #6 : Funcion swap
+/* Crea una función llamada swap() que reciba un array y dos parametros que sean indices del array. 
+La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como 
+parametro. Retorna el array resultante. */
+
+const arraySugerencia = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
+
+const swap = (initialArray,numberOne,numberTwo) => {
+        
+    const firstValue = initialArray[numberOne];
+    const secondValue = initialArray[numberTwo];
+    initialArray.splice(numberOne,1,secondValue);
+    initialArray.splice(numberTwo,1,firstValue);
+
+   return initialArray;
+}
+console.log(arraySugerencia);
+swap(arraySugerencia,3,1);
+console.log(arraySugerencia);
