@@ -128,11 +128,26 @@ const toys = [
   { id: 40, name: "El gato con Guantes" },
   { id: 40, name: "El gato felix" },
 ];
-
+let index = 0;
 for (const toy of toys) {
-  //console.log(toy);
-      if (toys[toy].includes(toys[toy].name == /\bgato/)) {
-      toys.splice(toys[toy],1);
-   }
+  if (toy.name.includes("gato")) {
+    toys.splice(index, 2);
+  }
+  index++;
 }
-//console.log(toys);
+console.log(toys);
+
+//Iteracion #7:
+//Usa un bucle for...of para recorrer todos los juguetes y añade los que tengan más de 15 ventas 
+//(sellCount) al array popularToys. 
+//Imprimelo por consola.. Puedes usar este array:
+
+const popularToys = [];
+const toys2 = [
+	{id: 5, name: 'Buzz MyYear', sellCount: 10}, 
+	{id: 11, name: 'Action Woman', sellCount: 24}, 
+	{id: 23, name: 'Barbie Man', sellCount: 15}, 
+	{id: 40, name: 'El gato con Guantes', sellCount: 8},
+	{id: 40, name: 'El gato felix', sellCount: 35}
+]
+
