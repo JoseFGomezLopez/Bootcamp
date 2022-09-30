@@ -105,64 +105,87 @@ nombre de los sonidos que el usuario tenga como favoritos.
 */
 
 const users2 = [
-    {name: 'Manolo el del bombo',
-        favoritesSounds: {
-            waves: {format: 'mp3', volume: 50},
-            rain: {format: 'ogg', volume: 60},
-            firecamp: {format: 'mp3', volume: 80},
-        }
+  {
+    name: "Manolo el del bombo",
+    favoritesSounds: {
+      waves: { format: "mp3", volume: 50 },
+      rain: { format: "ogg", volume: 60 },
+      firecamp: { format: "mp3", volume: 80 },
     },
-    {name: 'Mortadelo',
-        favoritesSounds: {
-            waves: {format: 'mp3', volume: 30},
-            shower: {format: 'ogg', volume: 55},
-            train: {format: 'mp3', volume: 60},
-        }
+  },
+  {
+    name: "Mortadelo",
+    favoritesSounds: {
+      waves: { format: "mp3", volume: 30 },
+      shower: { format: "ogg", volume: 55 },
+      train: { format: "mp3", volume: 60 },
     },
-    {name: 'Super Lopez',
-        favoritesSounds: {
-            shower: {format: 'mp3', volume: 50},
-            train: {format: 'ogg', volume: 60},
-            firecamp: {format: 'mp3', volume: 80},
-        }
+  },
+  {
+    name: "Super Lopez",
+    favoritesSounds: {
+      shower: { format: "mp3", volume: 50 },
+      train: { format: "ogg", volume: 60 },
+      firecamp: { format: "mp3", volume: 80 },
     },
-    {name: 'El culebra',
-        favoritesSounds: {
-            waves: {format: 'mp3', volume: 67},
-            wind: {format: 'ogg', volume: 35},
-            firecamp: {format: 'mp3', volume: 60},
-        }
+  },
+  {
+    name: "El culebra",
+    favoritesSounds: {
+      waves: { format: "mp3", volume: 67 },
+      wind: { format: "ogg", volume: 35 },
+      firecamp: { format: "mp3", volume: 60 },
     },
-]
+  },
+];
 
 const favoritesSounds = new Array();
 let typeOfSounds = new Array();
 
 for (const user of users2) {
-    for (const key in user) {
-      favoritesSounds.unshift(user.favoritesSounds);
-    }
-    
+  for (const key in user) {
+    favoritesSounds.unshift(user.favoritesSounds);
   }
- for (const sound of favoritesSounds) {
-      typeOfSounds.unshift(Object.keys(sound));
- } 
- typeOfSounds = typeOfSounds.flat();
- 
- let newTypeOfSound = new Set(typeOfSounds);
- newTypeOfSound = Array.from(newTypeOfSound);
- let counterTwo = 0;
-
- for (let i = 0; i < newTypeOfSound.length; i++) {
-    for (let j = 0; j < typeOfSounds.length; j++) {
-        if (newTypeOfSound[i] == typeOfSounds[j]) {
-            counterTwo++;
-        }
-
-    }
-    console.log(`El sonido de ${newTypeOfSound[i]} ha sido elegido : ${counterTwo} veces`)
-    counterTwo = 0;
 }
- //console.log(newTypeOfSound);
- //console.log(typeOfSounds); 
- //console.log(counterTwo);
+for (const sound of favoritesSounds) {
+  typeOfSounds.unshift(Object.keys(sound));
+}
+typeOfSounds = typeOfSounds.flat();
+
+let newTypeOfSound = new Set(typeOfSounds);
+newTypeOfSound = Array.from(newTypeOfSound);
+let counterTwo = 0;
+
+for (let i = 0; i < newTypeOfSound.length; i++) {
+  for (let j = 0; j < typeOfSounds.length; j++) {
+    if (newTypeOfSound[i] == typeOfSounds[j]) {
+      counterTwo++;
+    }
+  }
+  console.log(
+    `El sonido de ${newTypeOfSound[i]} ha sido elegido : ${counterTwo} veces`
+  );
+  counterTwo = 0;
+}
+
+//Iteracion #4: Metodos findArrayIndex
+/* Crea una función llamada findArrayIndex que reciba como parametros un array de textos 
+y un texto y devuelve la posición del array cuando el valor del array sea igual al valor 
+del texto que enviaste como parametro. Haz varios ejemplos y compruebalos.*/
+
+const arrayOfStrings = ["Caracol", "Mosquito", "Salamandra", "Ajolote"];
+
+const findArrayIndex = (initialArray, word) => {
+  for (let i = 0; i < initialArray.length; i++) {
+    if (initialArray[i] === word) {
+      console.log(`La palabra ${word} ocupa la posicion ${i} del array`);
+      break;
+    } else if (i + 1 == initialArray.length) {
+      console.log(
+        `La palabra ${word} no ocupa ninguna posicion en el Array de Strings`
+      );
+    }
+  }
+};
+
+findArrayIndex(arrayOfStrings, "Perro");
