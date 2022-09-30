@@ -95,3 +95,74 @@ for (const type of sounds) {
 }
 
 console.log(counter);
+
+//Iteracion 3
+
+/* Dado el siguiente javascript usa forof y forin para saber cuantas veces ha sido cada sonido agregado 
+por los usuarios a favorito. Para ello recorre la lista de usuarios y usa forin para recoger el 
+nombre de los sonidos que el usuario tenga como favoritos.
+
+*/
+
+const users2 = [
+    {name: 'Manolo el del bombo',
+        favoritesSounds: {
+            waves: {format: 'mp3', volume: 50},
+            rain: {format: 'ogg', volume: 60},
+            firecamp: {format: 'mp3', volume: 80},
+        }
+    },
+    {name: 'Mortadelo',
+        favoritesSounds: {
+            waves: {format: 'mp3', volume: 30},
+            shower: {format: 'ogg', volume: 55},
+            train: {format: 'mp3', volume: 60},
+        }
+    },
+    {name: 'Super Lopez',
+        favoritesSounds: {
+            shower: {format: 'mp3', volume: 50},
+            train: {format: 'ogg', volume: 60},
+            firecamp: {format: 'mp3', volume: 80},
+        }
+    },
+    {name: 'El culebra',
+        favoritesSounds: {
+            waves: {format: 'mp3', volume: 67},
+            wind: {format: 'ogg', volume: 35},
+            firecamp: {format: 'mp3', volume: 60},
+        }
+    },
+]
+
+const favoritesSounds = new Array();
+let typeOfSounds = new Array();
+
+for (const user of users2) {
+    for (const key in user) {
+      favoritesSounds.unshift(user.favoritesSounds);
+    }
+    
+  }
+ for (const sound of favoritesSounds) {
+      typeOfSounds.unshift(Object.keys(sound));
+ } 
+ typeOfSounds = typeOfSounds.flat();
+ 
+ let newTypeOfSound = new Set(typeOfSounds);
+ newTypeOfSound = Array.from(newTypeOfSound);
+ let counterTwo = 0;
+
+ for (let i = 0; i < newTypeOfSound.length; i++) {
+    for (let j = 0; j < typeOfSounds.length; j++) {
+        if (newTypeOfSound[i] == typeOfSounds[j]) {
+            counterTwo++;
+        }
+
+    }
+    console.log(`El sonido de ${newTypeOfSound[i]} ha sido elegido : ${counterTwo} veces`)
+    counterTwo = 0;
+}
+ //console.log(newTypeOfSound);
+ //console.log(typeOfSounds); 
+ //console.log(counterTwo);
