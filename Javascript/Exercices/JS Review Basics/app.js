@@ -73,7 +73,8 @@ const users = [
 const arrayFavoritesSounds = [];
 const sounds = [];
 const volume = [];
-counter = 0;
+let counter = 0;
+let denominador = 0;
 
 for (const user of users) {
   for (const key in user) {
@@ -91,10 +92,11 @@ for (const sound of arrayFavoritesSounds) {
 for (const type of sounds) {
   for (const feature of type) {
     counter += feature.volume;
+    denominador++;
   }
 }
-
-console.log(counter);
+const media = counter/denominador;
+console.log(media);
 
 //Iteracion 3
 
