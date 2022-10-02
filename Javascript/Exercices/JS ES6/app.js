@@ -228,35 +228,34 @@ console.log(legendsStreames);
 //introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si
 //introduzco 'i', me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
 
-const input = document.querySelector("input");
+// const input = document.querySelector("input");
 
-function buscarNombre() {
-  input.innerText = "";
-  const result = streamers.filter((streamer) => {
-    if (streamer.nombre.includes(input.value)) {
-      return (input.innerText = streamer.name);
-    }
-  });
-}
-input.addEventListener("input", buscarNombre);
-
-//5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola
-//los streamers que incluyan la palabra introducida en el input. De esta forma, si
-//introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si introduzco 'i',
-//me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
-//En este caso, muestra solo los streamers filtrados cuando hagamos click en el button.
-
-// const input5_7 = document.querySelector("input");
-
-// function armarBoton() {
-//   function buscarNombre() {
-//     const btn = document.querySelector("button");
-//     const result2 = streamers.filter((streamer) => {
-//       if (streamer.nombre.includes(input.value)) {
-//         return streamer.name;
-//       }
-//     });
-//   }
-//   btn.addEventListener("click", buscarNombre);
+// function buscarNombre(e) {
+  
+//   const result = streamers.filter((streamer) => {
+//     if (streamer.name.includes(input.value)) {
+//        console.log(streamer.name);
+//       return input.textContent= streamer.name; 
+//     }
+//   });
 // }
-// input5_7.addEventListener("input", armarBoton);
+// input.addEventListener("input", buscarNombre);
+
+// 5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola
+// los streamers que incluyan la palabra introducida en el input. De esta forma, si
+// introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si introduzco 'i',
+// me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
+// En este caso, muestra solo los streamers filtrados cuando hagamos click en el button.
+
+const input5_7 = document.querySelector("input");
+const btn = document.querySelector("button");
+  
+  const e = () => {
+    const result2 = streamers.filter((streamer) => {
+      if (streamer.name.includes(input5_7.value)) {
+        console.log(streamer.name);
+        return streamer.name;
+      }
+    });
+  };
+  btn.addEventListener("click",e); 
