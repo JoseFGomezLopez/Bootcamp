@@ -1,0 +1,7 @@
+
+/*- Las dos etiquetas p tienen que tener un tamaño de fuente de 9px.
+- Solo tienes que editar el fichero HTML, ya que el CSS ya está generado y enlazado.*/
+
+.small{
+    font-size: 9px;
+}
