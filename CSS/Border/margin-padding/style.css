@@ -1,0 +1,11 @@
+
+.box{
+    
+    background-color: darkblue;
+    height: 10rem;
+    width: 10rem;
+    padding: 16px;
+    margin: 1rem;
+    /* padding top,rigth,left,bottom*/
+    /*margin top,right,bottom,left*/
+}

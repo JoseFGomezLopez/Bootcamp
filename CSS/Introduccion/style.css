@@ -1,0 +1,56 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+ color: red;
+ text-decoration: underline;
+
+}
+
+div{
+    width: 8rem;
+    height: 8rem;
+    background-color: aquamarine;
+
+}
+
+.saludo{
+    background-color: green;
+
+}
+
+.despedida{
+    background-color: orange;
+}
+
+.highlight{
+   
+   color: yellow;
+   font-weight: bold;
+
+}
+
+body{
+    background-color: beige;
+    color: blue;
+}
+
+.box > p{
+    
+    color:blueviolet;
+
+}
+
+ul > li{
+    text-decoration: underline;
+}
+
+h2,h3{
+    
+    font-size: 2rem;
+    color: sienna;
+}
+

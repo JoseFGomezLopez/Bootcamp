@@ -1,0 +1,36 @@
+
+div{
+    width: 150px;
+    height: 75px;
+    padding: 25px;
+    border: 10px solid coral;
+    background-color: yellowgreen;
+    margin: 10px;
+}
+.border-box{
+    box-sizing: border-box;
+}
+.content-box{
+    box-sizing: content-box;
+}
+.hidden{
+    margin: 5px;
+    overflow: hidden;
+    border: 1px dotted crimson;
+    height: 2rem;
+    width: 12rem;
+}
+.scroll{
+    margin: 5px;
+    overflow: scroll;
+    border: 1px dotted crimson;
+    height: 2rem;
+    width: 12rem;
+}
+.auto{
+    margin: 5px;
+    overflow: auto;
+    border: 1px dotted crimson;
+    height: 2rem;
+    width: 12rem;
+}

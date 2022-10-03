@@ -1,0 +1,27 @@
+
+h1{
+    font-size: 18px;
+    margin: .5em;
+}
+
+h2{
+    font-size: 2rem;
+}
+ .box{
+    background-color: aquamarine;
+    width: 80%;
+ }
+ .first{
+    width: 70%;
+    background-color: burlywood;
+
+ }
+ .second{
+    width: 90%;
+    background-color: cyan;
+ }
+nav{
+    background-color: darkorange;
+    width: 100vw;
+    height: 20vh;
+}

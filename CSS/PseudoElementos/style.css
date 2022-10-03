@@ -1,0 +1,12 @@
+.parrafo::after{
+    content: "+++";
+}
+ul>li{
+    list-style: none;
+}
+ul>li::after{
+   content: "<-";
+}
+ul>li::before{
+   content : "->";
+}

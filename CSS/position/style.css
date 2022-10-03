@@ -1,0 +1,19 @@
+div{
+    background-color: aqua;
+}
+.static{
+    position: static;
+}
+.fixed{
+    position: fixed;
+    background-color: blueviolet;
+}
+.absolute{
+position: absolute;
+}
+.relative{
+position: relative;
+}
+.sticky{
+position: sticky;
+}
