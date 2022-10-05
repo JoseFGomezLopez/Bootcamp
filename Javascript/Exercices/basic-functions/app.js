@@ -122,6 +122,7 @@ const removeDuplicates = (initialArray) => {
 };
 
 removeDuplicates(duplicates);
+console.log(duplicates);
 
 //Iteracion 7 : Buscar un valor en un array
 
@@ -167,9 +168,9 @@ const counterWords = [
 ];
 const repeatCounter = (initialArray) => {
   let counter = 0;
-  // const newSet = new Set(initialArray);
-  // newArray = Array.from(newSet);
-  const newArray = removeDuplicates(counterWords);
+  const newSet = new Set(initialArray);
+  newArray = Array.from(newSet);
+  // const newArray = removeDuplicates(counterWords);
 
   for (let i = 0; i < newArray.length; i++) {
     for (let j = 0; j < initialArray.length; j++) {
