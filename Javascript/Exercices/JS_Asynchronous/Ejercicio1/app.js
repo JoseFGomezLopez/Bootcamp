@@ -26,7 +26,7 @@ const transformData = () => {
 };
 
 const printData = () => {
-  text.innerHTML += `
+  text.innerHTML = `
    <p>
     ${arrayMapeado}
    </p>
