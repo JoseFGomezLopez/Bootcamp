@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+#app{
+  width: 100vw;
+  height: 100vh;
+  display : flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: -webkit-linear-gradient(top, white, rgb(249, 193, 123),white);
+  gap: 4.8px;
+}
+.card{
+    
+    flex: 1 1 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25rem;
+    max-height: 25rem;
+    background-color: bisque;
+    box-shadow: rgb(150,150,150) .3125rem .3125rem .625rem inset;
+    border: 1px solid red;
+}
+.image{
+    max-width: 200px;
+    max-height: 200px;
+    
+
+}
+.interpreter{
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn_class{
+    align-self: center;
+    text-align: center;
+    border: 1px solid red;
+    margin: 8px;
+    width: 9.375rem;
+    height: 3.75rem;   
+    background-color: bisque;
+    font-variant: small-caps;
+}
+.card_title,.card_subtitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+.card_title{
+    font-weight: 600;
+}

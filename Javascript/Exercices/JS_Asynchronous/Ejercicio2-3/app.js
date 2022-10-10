@@ -7,6 +7,7 @@ const baseUrl = "https://api.nationalize.io";
 const btn = document.querySelector("button");
 const input = document.querySelector("input");
 const div = document.createElement("div");
+
 div.classList.add(`div_flex`);
 let datos;
 let arrayData;
@@ -32,12 +33,29 @@ const getData = async () => {
   };
   const printData = () => {
     arrayData.forEach((element)=>{
-    div.innerHTML += `
+      
+      const body = document.querySelector('body');
+      const btn = document.createElement(`button`);
+      btn.style.width = "100px";
+      btn.style.height = "100px";
+      btn.innerText = "X";
+      body.appendChild(btn);
+      btn.addEventListener('click',(ev)=>{
+      
+        element ;
+        document.removeChild(btn);
+      
+      });
+
+      div.innerHTML += `
     <p>el nombre es ${element.name}</p>
     <p><img src ="${element.image}"></p>`;
   });
   document.body.appendChild(div);
 };
-
 btn.addEventListener("click", getData);
+
+
+
+
 

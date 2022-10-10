@@ -1,0 +1,54 @@
+{
+  "aquiNoHay": [
+    {
+      "id": "1",
+      "characterName": "Emilio Delgado Martínez",
+      "status": "alive",
+      "interpreter": "Fernando Tejero",
+      "famousQuote": "Un poquito de por favor",
+      "image": "./public/images/Emilio.jpeg"
+    },
+    {
+      "id": "2",
+      "characterName": "Mauricio Hidálgo Torres",
+      "status": "alive",
+      "interpreter": "Luis Merlo",
+      "famousQuote": "Bea, me lo debes, yo te di mi semen",
+      "image": "./public/images/Mauri.jpeg"
+    },
+    {
+      "id": "3",
+      "characterName": "Juan Cuesta",
+      "status": "alive",
+      "interpreter": "Jose Luis Gil",
+      "famousQuote": "Juan Cuesta, presidente de esta nuestra comunidad.",
+      "image": "./public/images/JuanCuesta.jpeg"
+    }
+  ],
+  "laQueAvecina": [
+    {
+      "id": "1",
+      "characterName": "Antonio Recio",
+      "status": "alive",
+      "interpreter": "Jordi Sánchez",
+      "famousQuote": "Mayorista, no limpio pescado.",
+      "image": "./public/images/AntonioRecio.jpeg"
+    },
+    {
+      "id": "2",
+      "characterName": "Enrique Pastor",
+      "status": "alive",
+      "interpreter": "José Luis Gil",
+      "famousQuote": "Qué follón!",
+      "image": "./public/images/JuanCuestalq.jpeg"
+    },
+    {
+      "id": "3",
+      "characterName": "Amador Rivas",
+      "status": "alive",
+      "interpreter": "Pablo Chiapella",
+      "famousQuote": "No toques! Por qué tocas?",
+      "image": "./public/images/Amador.jpeg"
+    }
+  ]
+}

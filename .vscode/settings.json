@@ -1,4 +1,5 @@
 {
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira code'"
+    "editor.fontFamily": "'Fira code'",
+    "liveServer.settings.port": 5501
 }
