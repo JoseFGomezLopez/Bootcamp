@@ -1,0 +1,226 @@
+{
+  "peaks": [
+    {
+      "id": "1",
+      "name": "Everest",
+      "meaning": "que significa Madre del Universo",
+      "site": "cordillera del Himalaya",
+      "country": "Nepal",
+      "first_ascent": "Edmund Hillary y Tenzing Norgay el 23 de mayo de 1953",
+      "altitude": "8.849",
+      "image": "./images/Everest.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Monte K2",
+      "meaning": "significa Karakorum 2",
+      "site": " cordillera del Karakórum",
+      "country": "Pakistán/China",
+      "first_ascent": " Achille Compagnoni y Lino Lacedelli el 31 julio de 1954",
+      "altitude": "8848",
+      "image": "./images/K2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Lhotse",
+      "meaning": "significa Pico Sur",
+      "site": "región de Khumbu",
+      "country": "China",
+      "first_ascent": "Fritz Luchsinger y Ernst Reiss lo coronaron el 18 de mayo de 1956.",
+      "altitude": " 8.516",
+      "image": "./images/LhotseMountain.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Kanchenjunga",
+      "meaning": "significa Los cinco tesoros de las nieves",
+      "site": " cordillera oriental del Himalaya",
+      "country": "India/Nepal",
+      "first_ascent": "George Band y Joe Brown, el 25 de mayo de 1955.",
+      "altitude": "8.586",
+      "image": "./images/Kangchenjunga.webp"
+    },
+    {
+      "id": "5",
+      "name": "Makalu",
+      "meaning": "significa Montaña Negra",
+      "site": "zona Mahalangur del Himalaya",
+      "country": "Nepal/China",
+      "first_ascent": "Jean Franco,Lionel Terray y Jean Couzy en 1955",
+      "altitude": " 8.463",
+      "image": "./images/Makalu.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Dhaulagiri",
+      "meaning": "en sánscrito significa Montaña blanca",
+      "site": "cordillera del Himalaya",
+      "country": "Nepal",
+      "first_ascent": "Kurt Diemberger, Peter Diener, Ernst Forrer, Albin Schelbert, Nawang Dorje Sherpa y Nima Dorje Sherpa en 1960",
+      "altitude": "8.167",
+      "image": "./images/dhaulagiri.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Manaslu",
+      "meaning": "que significa Mente",
+      "site": "cordillera del Himalaya",
+      "country": "Nepal",
+      "first_ascent": "Toshio Imanishi y Gyalzen Norbu el 9 de mayo de 1956.",
+      "altitude": "8.163",
+      "image": "./images/Manaslu.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Cho Oyu",
+      "meaning": "significa en tibetano Diosa Turquesa",
+      "site": "cordillera del Himalaya",
+      "country": "Nepal/China",
+      "first_ascent": " Herbert Tichy y Joseph Joechler junto con el sherpa Pasang Dawa Lama el 19 de octubre de 1954",
+      "altitude": " 8.201",
+      "image": "./images/Ochu.jpeg"
+    },
+    {
+      "id": "9",
+      "name": "Nanga Parbat",
+      "meaning": "significa Montaña Desnuda",
+      "site": " cordillera del Himalaya",
+      "country": "PaKistan",
+      "first_ascent": "Hermann Buhl, junto con un equipo germano-austríaco,el 3 de julio de 1953",
+      "altitude": "8.125",
+      "image": "./images/Nanga_parbat.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Annapurna",
+      "meaning": "significa Diosa de las Cosechas",
+      "site": "cordillera del Himalaya",
+      "country": "Nepal",
+      "first_ascent": "Maurice Herzog y Louis Lachenal el 3 de junio de 1950",
+      "altitude": "8.091",
+      "image": "./images/Annapurna.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Gasherbrum I o K5",
+      "meaning": "Karakorum 5",
+      "site": " cordillera del Karakórum",
+      "country": "Pakistán/China",
+      "first_ascent": "Pete Schoening y Andrew Kauffman el 5 de julio de 1958",
+      "altitude": "8.068",
+      "image": "./images/K5.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Broad Peak o K3",
+      "meaning": "Karakorum 3",
+      "site": "en el macizo del Karakórum",
+      "country": "PaKistan",
+      "first_ascent": "Ferenski y una expedición polaca el 28 de julio de 1975",
+      "altitude": "8.047",
+      "image": "./images/Broad_Peak.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Gasherbrum II o K4",
+      "meaning": "Karakorum 4",
+      "site": " cordillera del Karakórum",
+      "country": "PaKistan",
+      "first_ascent": "Fritz Moravec, Sepp Larch y Hans Willenport  en 1956",
+      "altitude": "8.035",
+      "image": "./images/K4.jpeg"
+    },
+    {
+      "id": "14",
+      "name": "Shisha Pangma",
+      "meaning": "Creta sobre la planicie de Hierba",
+      "site": " cordillera del Himalaya",
+      "country": "China",
+      "first_ascent": "Xǔ Jìng y una expedición tibetana en 1964",
+      "altitude": "8.027",
+      "image": "./images/Shishapangma.jpg"
+    }
+  ],
+  "climbers": [
+    {
+      "id": "1",
+      "name": "Reinhold Messner",
+      "country": "Italia",
+      "year": "1986",
+      "image": "https://www.elpais.com/elpais/imagenes/2016/09/05/eps/1473026734_147302_1473026734_001_sumario_normal.jpg",
+      "feature": "sin Oxigeno"
+    },
+    {
+      "id": "2",
+      "name": "Erdhard Loretan ",
+      "country": "Suiza",
+      "year": "1995",
+      "image": "https://www.desnivel.com/images/2019/04/11999622-1652863988303735-8547696655801628852-o.jpg",
+      "feature": "sin Oxígeno"
+    },
+    {
+      "id": "3",
+      "name": "Juanito Oiarzabal",
+      "country": "Euskadi",
+      "year": "1999",
+      "image": "https://www.mundodeportivo.com/files/image_948_465/uploads/2020/04/26/60e7c76d18b78.jpeg",
+      "feature": "sin Oxígeno"
+    },
+    {
+      "id": "4",
+      "name": "Alberto Iñurrategi",
+      "country": "Euskadi",
+      "year": "2002",
+      "image": "https://static.ternua.com/media/wysiwyg/Friends/AlbertoInurrategi/I_urrategi-Imagen-012.jpg",
+      "feature": "sin Oxígeno"
+    },
+    {
+      "id": "5",
+      "name": "Ed Viesturs",
+      "country": "EEUU",
+      "year": "2005",
+      "image": "https://i.ytimg.com/vi/rSohhWOP0P0/maxresdefault.jpg",
+      "feature": "without Oxigen"
+    },
+    {
+      "id": "6",
+      "name": "Silvio Mondinelli",
+      "country": "Italia",
+      "year": "2007",
+      "image": "https://www.ferrino.it/k-content/ferrino/themes/ferrino/html/mediabank/mondinelli1_5a0eeec9f040e.jpg",
+      "feature": "without Oxigen"
+    },
+    {
+      "id": "7",
+      "name": "Iván Vallejo",
+      "country": "Ecuador",
+      "year": "2008",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8Vn6T5p6bR_WsQe9LQuL8fl7PqDd6aT1Jm9TDX7sP4-zg-lSQNgVVxKKa2SS72f5Vas&usqp=CAU",
+      "feature": "sin Oxígeno"
+    },
+    {
+      "id": "8",
+      "name": "Denis Urubko",
+      "country": "Kazajstán",
+      "year": "2009",
+      "image": "https://static.polityka.pl/_resource/res/path/ab/c0/abc02e59-c802-492a-87d9-7108f7f44256_f1400x900",
+      "feature": "sin Oxígeno"
+    },
+    {
+      "id": "9",
+      "name": "Veikka Gustafsson",
+      "country": "Finlandia",
+      "year": "2009",
+      "image": "https://i.pinimg.com/originals/02/ed/b2/02edb2d4d9f4f37099c586bc834ad183.jpg",
+      "feature": "sin Oxígeno"
+    },
+    {
+      "id": "10",
+      "name": "Gerlinde Kaltenbrunner ",
+      "country": "Austria",
+      "year": "2011",
+      "image": "https://www.desnivel.com/images/2012/06/k2-summit-g.kaltenrbunnerm.zhumayev-nationalgeographic.jpg",
+      "feature": "sin Oxígeno"
+    }
+  ]
+}
