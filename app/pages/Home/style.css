@@ -1,0 +1,108 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.2rem;
+  z-index: 1000;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1500491460312-c32fc2dbc751?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+body .climberCard:hover {
+  color: white;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Lightning_in_Dallas_2015.jpg/1658px-Lightning_in_Dallas_2015.jpg");
+}
+body .climberCard:active {
+  transform: scale(1.5);
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.3125rem;
+}
+button {
+  font-weight: 500;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  background-color: inherit;
+}
+
+button:hover {
+  font-weight: 700;
+  border-top: 0.0625rem solid white;
+  border-bottom: 0.0625rem solid white;
+  color: white;
+}
+.startImg {
+  width: 85vw;
+  height: 83vh;
+  border: 0.0625rem solid lightgrey;
+  border-radius: 30px;
+  box-shadow: lightgray 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+
+.climberCard img {
+  width: 20rem;
+  height: 20rem;
+  transition: all 2s;
+}
+
+.peaksCard img {
+  width: 20rem;
+  height: 20rem;
+}
+.climberCard {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.1rem;
+  border: 1px solid gray;
+  border-radius: 1.875rem 1.25rem;
+  width: 20rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  box-shadow: #111 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+.peaksCard {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.01rem;
+  border: 1px solid gray;
+  border-radius: 1.875rem 1.25rem;
+  width: 20rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  box-shadow: #111 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+.peaksCard h2,
+.peaksCard h3 {
+  width: 18.7rem;
+}
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input {
+  border: none;
+  width: 19rem;
+  background: transparent;
+  color: black;
+}
+input:active {
+  border-top: 1px solid white;
+  border-bottom: 0.0625rem solid white;
+  border-radius: 0.625rem;
+}
+input:hover {
+  content: inherit;
+  border-top: 1px solid white;
+  border-bottom: 0.0625rem solid white;
+}
