@@ -11,15 +11,12 @@ de MZ.
 de los p que hayas insertado y que si el usuario hace click en este botón 
 eliminemos el parrafo asociado. */
 
-const baseUrl = "https://api.nationalize.io/?name=";
+const baseUrl = "https://api.nationalize.io?name=";
 const baseUrl2 = "https://ghibliapi.herokuapp.com/films";
 
 const btn = document.querySelector("button");
 const input = document.querySelector("input");
 const div = document.createElement("div");
-
-div.classList.add(`div_flex`);
-let datos;
 
 const getData = async () => {
   try {
@@ -31,32 +28,50 @@ const getData = async () => {
     console.log(error);
   }
 };
+
+// btn.addEventListener('click', async()=>{
+//   try{
+//     const data = await getData(input.value);
+//     for(const country of data.country){
+//      document.body.innerHTML +=` 
+//      <p>El nombre ${input.value} tiene un ${country.probability} por ciernto de ser
+//      de ser ${country.country_id}
+//      </p>
+     
+//      `}
+//   }catch(error){
+//      console.log("Error")
+//   }
+// })
+
+
 const transformData = (datos) => {
   const arrayData = datos.map((element) => {
     return {
-      name: element.title,
+      name: element.name,
       image: element.image,
     };
   });
   printData(arrayData);
 };
 const printData = (arrayData) => {
+  
   arrayData.forEach((element, i) => {
+    
     const btn = document.createElement(`button`);
-
-    btn.setAttribute("id", `id_${i}`);
-
+    
+    btn.setAttribute("id",`id_${i}`);
     btn.style.width = "50px";
     btn.style.height = "20px";
     btn.innerText = `X${i}`;
-
     document.body.appendChild(btn);
-    div.innerHTML += `<p id="parrafo${i}">el nombre es ${element.name}<img src ="${element.image}" id="img${i}"></p>`;
-
+    const p = document.createElement('p');
+    p.setAttribute('id',`parrafo${i}`);
+    p.innerHTML += `el nombre es ${element.name}<img src ="${element.image}" id="img${i}">`;
+    div.appendChild(p);
     btn.addEventListener("click", (ev) => {
-      const p = document.querySelector(`parrafo${i}`);
-      div = p.parentNode;
-      div.removeChild(p)
+      
+      div.removeChild(p);
     });
     
   });
@@ -64,13 +79,3 @@ const printData = (arrayData) => {
 };
 btn.addEventListener("click", getData);
 
-// const removeThisImage = document.querySelectorAll(".removeThisImage");
-
-// for (const button of removeThisImage) {
-//     button.addEventListener("click", () => button.parentElement.remove());
-// }
-// const getButton2 = document.querySelectorAll('.remove-this')
-// getButton2.forEach(btn => {
-//     btn.addEventListener('click', (evt) => {
-//         const element = evt.path[1]
-//         element.remove();}}
