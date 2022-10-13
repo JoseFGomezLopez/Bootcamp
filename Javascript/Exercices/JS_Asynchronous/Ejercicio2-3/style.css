@@ -15,7 +15,9 @@ body{
     align-items: center;
     gap: 1rem;
 }
-
+div{
+    margin:0 auto;
+}
 
 img{
     width: 10rem;
@@ -23,6 +25,6 @@ img{
 }
 p{
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
 }

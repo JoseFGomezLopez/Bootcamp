@@ -60,17 +60,17 @@ const printData = (arrayData) => {
     
     const btn = document.createElement(`button`);
     
-    btn.setAttribute("id",`id_${i}`);
     btn.style.width = "50px";
     btn.style.height = "20px";
-    btn.innerText = `X${i}`;
-    document.body.appendChild(btn);
+    btn.innerText = `X${i}`
+
+    div.appendChild(btn);
     const p = document.createElement('p');
-    p.setAttribute('id',`parrafo${i}`);
+    
     p.innerHTML += `el nombre es ${element.name}<img src ="${element.image}" id="img${i}">`;
     div.appendChild(p);
     btn.addEventListener("click", (ev) => {
-      
+      btn.previousSibling.remove();
       div.removeChild(p);
     });
     
