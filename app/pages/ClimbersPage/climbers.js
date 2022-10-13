@@ -3,18 +3,18 @@ import { climberCard } from "../../components/Figure/climbersCards";
 import { search } from "../../components/Input/inputSearch";
 
 
-export const getClimbers = () => {
-  getData("climbers");
+export const getClimbers = async() => {
+  await getData("climbers");
 
   const header = document.querySelector("header");
 
   const inputClimbers = document.querySelector("input");
   const app = document.querySelector("#app");
 
-  const data = getData("climbers");
+  const data = await getData("climbers");
 
-  const filterByName = (word) => {
-    const filteredClimbers = data.filter((climber) => {
+  const filterByName = async(word) => {
+    const filteredClimbers = await data.filter((climber) => {
       return climber.name.toLowerCase().includes(word.toLowerCase());
     });
     app.innerHTML = "";
@@ -24,7 +24,7 @@ export const getClimbers = () => {
 
     return filteredClimbers;
   };
-  inputClimbers.addEventListener("input", (ev) =>
-    filterByName(inputClimbers.value)
+  inputClimbers.addEventListener("input", async(ev) =>
+    await filterByName(inputClimbers.value)
   );
 };

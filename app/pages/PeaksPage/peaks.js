@@ -1,17 +1,17 @@
-import { getData } from "../../services/service";
+import { getData,getAPIData } from "../../services/service";
 import { peaksCard } from "../../components/Figure/peaksCard";
 
 
-export const initPeaks = () => {
-  getData("peaks");
-
+export const initPeaks = async() => {
+  
+  await getData("peaks");
+  const data = await getData("peaks");
   const input = document.querySelector("input");
   const app = document.querySelector("#app");
-
-  const data = getData("peaks");
-  console.log(data);
-  const filterPeaks = (word) => {
-    const filteredPeaks = data.filter((peak) => {
+ 
+  let filteredPeaks;
+  const filterPeaks = async(word) => {
+     filteredPeaks = await data.filter((peak) => {
       return peak.name.toLowerCase().includes(word.toLowerCase());
     });
     console.log(filteredPeaks), (app.innerHTML = "");
@@ -20,5 +20,5 @@ export const initPeaks = () => {
     }
     return filteredPeaks;
   };
-  input.addEventListener("input", (ev) => filterPeaks(input.value));
+  input.addEventListener("input", async(ev) => await filterPeaks(input.value));
 };

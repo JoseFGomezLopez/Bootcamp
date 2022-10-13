@@ -10,6 +10,7 @@ export const mapHomeData = (arraytoMap) => {
       image,
       name
   }
+  
   });
   printHomeHTML(mappedData);
 }
