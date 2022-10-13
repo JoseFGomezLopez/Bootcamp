@@ -210,18 +210,19 @@ console.log(nameWithU);
 //.includes() para la comprobación.
 //Además, pon el valor de la propiedad .gameMorePlayed a MAYUSCULAS cuando
 //.age sea mayor que 35.
-
-const legendsStreames = streamers.filter((streamer) => {
-  if (streamer.gameMorePlayed.includes("Legends")) {
-    if (streamer.age <= 35) {
-      return streamer.name;
-    } else {
-      return streamer.name.toUpperCase();
-    }
+const legendsStreames = streamers.filter((streamer) =>
+  streamer.gameMorePlayed.includes("Legends")
+);
+const legends = legendsStreames.map((element) => {
+  if (element.age > 35) {
+    element.gameMorePlayed.toUpperCase();
+    return element;
+  } else {
+    return element;
   }
 });
 
-console.log(legendsStreames);
+console.log(legends);
 
 //5.6 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola
 //los streamers que incluyan la palabra introducida en el input. De esta forma, si
@@ -363,16 +364,18 @@ const videogames = [
   },
 ];
 
-const sumScoresRPG = videogames
-  .filter((score) => {
-    for (let i = 0; i < score.genders.length; i++) {
-      if (score.genders[i] == "RPG") {
-        return score;
-      }
+const sumScoresRPG = videogames.filter((score) => {
+  for (let i = 0; i < score.genders.length; i++) {
+    if (score.genders[i] == "RPG") {
+      return score;
     }
-  });
+  }
+});
 
-const suma = sumScoresRPG.reduce((acc, score) => acc + score.score / sumScoresRPG.length, 0);
+const suma = sumScoresRPG.reduce(
+  (acc, score) => acc + score.score / sumScoresRPG.length,
+  0
+);
 
 console.log(sumScoresRPG);
 console.log(suma);
