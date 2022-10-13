@@ -3,7 +3,7 @@ import { mapPeaksData } from "../utils/mapFunction";
 import { mapClimbersData } from "../utils/mapFunction";
 import { mapHomeData } from "../utils/mapFunction";
 
-const baseURL = " http://localhost:3000/";
+const baseURL = "https://proyecto-zzek.onrender.com/";
 
 let dataToFilter;
 
