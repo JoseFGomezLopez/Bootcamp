@@ -81,27 +81,23 @@ selectDivs[selectDivs.length - 1].remove();
 });
 
 
-// btn.setAttribute("onclick", "borrar()");
 
-// function borrar(){
-//     let id = countries.length-1;
-//     let elementToDelete = document.getElementById('#div_' + id +'"');
-//     document.body.removeChild(elementToDelete);
-//     id--;
-// }
-// //btn.addEventListener("click",borrar);
-
-//1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los 
-//elementos de las listas que elimine ese mismo elemento del html.
-
-
-for (let i = 0; i < countries2.length; i++) {
+countries2.forEach((country, i) => {
     
-    const btn = document.createElement('button');
-    btn.addEventListener("click", function(){
-        const selectDivs = document.querySelector("div");
-        selectDivs[i].remove();
-    })
-    document.body.appendChild(btn);
-}
+  const btn = document.createElement(`button`);
+  
+  btn.style.width = "50px";
+  btn.style.height = "20px";
+  btn.innerText = `X${i}`
+
+  div.appendChild(btn);
+  
+  const p = document.createElement('p');
+  
+  p.innerHTML += `el nombre es ${element.name}<img src ="${element.image}" id="img${i}">`;
+  div.appendChild(p);
+  btn.addEventListener("click", (ev) => {
+  div.removeChild(p);}
+  });
+
 
