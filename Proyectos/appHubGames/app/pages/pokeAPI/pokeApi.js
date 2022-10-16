@@ -30,7 +30,7 @@ export const getpokeAPI = async () => {
   selectComp(divContainer, "pokemonTypes", "selectTypes", types);
   const location = await pokemonLocation();
   const mapArray = await pokeApi();
-  selectCompV(divContainer, "pokemonLocation", "selectLocations", location,mapArray);
+  selectCompV(divContainer, "pokemonLocation", "selectLocations", location);
   divComp(divContainer, "container", "");
   printPockemosHTML();
   const input = document.querySelector(".inputBusqueda");

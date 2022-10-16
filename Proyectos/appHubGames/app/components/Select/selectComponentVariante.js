@@ -1,4 +1,4 @@
-export const selectCompV = (container, nameSelect, className, arrayOptions,object) => {
+export const selectCompV = (container, nameSelect, className, arrayOptions) => {
     const label = document.createElement("label");
     label.setAttribute("for", className);
   
@@ -10,9 +10,9 @@ export const selectCompV = (container, nameSelect, className, arrayOptions,objec
     for (const value of arrayOptions) {
       const option = document.createElement("option");
       select.appendChild(option);
-      option.innerText = object.name;
+      option.innerText = value[0];
       option.setAttribute('class',`${className}Option`)
-      option.setAttribute("value", value);
+      option.setAttribute("value", value[1]);
     }
     container.appendChild(select);
   };
