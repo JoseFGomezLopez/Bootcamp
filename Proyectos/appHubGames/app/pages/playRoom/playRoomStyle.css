@@ -1,0 +1,54 @@
+.playRoom{
+    height: 90vh;
+    display: grid;
+    grid-gap: .8rem;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+.playerRoomParragraph{
+    color: white;
+    grid-row: 1/2;
+    grid-column: 5/9;
+    justify-self: center;
+}
+.roomButton-raya{
+    background-image: url('../../public/tresEnRaya.jpg');
+    grid-row:2/6;
+    grid-column: 2/6;
+}
+.roomButton-whakaTopo{
+    font-variant: small-caps;
+    background-image: url('../../public/topo.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    grid-row:2/6;
+    grid-column:8/12;
+}
+.roomButton-memoryGame{
+    background-image: url('../../public/memory.jpg');
+    background-size: cover;
+    grid-row:6/9;
+    grid-column: 2/6;
+}
+.roomButton-hangMan{
+    
+    background-image: url('../../public/hangMan.webp');
+    background-size: cover;
+    grid-row:6/9;
+    grid-column:8/12; 
+}
+.roomButton-pokeApi{
+    background-image: url('../../public/Pikachu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row:9/12;
+    grid-column:2/6;
+}
+.roomButton-quizz{
+
+    background-image: url('../../public/quiz.webp');
+    background-size: contain;
+    background-repeat: repeat-x;
+    grid-row:9/12;
+    grid-column:8/12;
+}
