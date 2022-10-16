@@ -46,7 +46,7 @@
     border: .125rem solid white;
 }
 
-.selectTypes{
+.selectTypes, .selectLocations{
     border-top: .0625rem solid white;
     border-bottom: .0625rem solid white;
     border-left: unset;
@@ -55,10 +55,10 @@
     color: white;
 }
 
-.selectTypes:hover{
+.selectTypes:hover, .selectLocations:hover{
     border:.125rem solid white;
 }
-.selectTypesOption{
+.selectTypesOption, .selectLocationsOption{
     background-color: inherit;
     color: black;
 }
@@ -72,7 +72,8 @@
     justify-content: center;
     align-items: center;
     margin:0.2rem;
-    min-width: 3.125rem;
-    min-height: 3.125rem;
+    min-width: 4.125rem;
+    min-height: 4.125rem;
     width: 8.375rem;
+    height: 13rem;
 }

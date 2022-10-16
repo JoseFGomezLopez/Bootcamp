@@ -1,16 +1,16 @@
 import "./pokeApiStyle.css";
 import { buttonComponent } from "../../components/Buttons/buttonComponent";
 import { playRoom } from "../playRoom/playRoom";
-import { printPockemosHTML } from "../../utils/printPockeHTML";
+import { printPockemosHTML } from "../../utils/PokeApi/printPockeHTML";
 import { divComp } from "../../components/Div/divComponent";
 import { inputComponent } from "../../components/InputComponent/inputComponent";
-import { inputPokeFilter } from "../../utils/filterNamePockemons";
+import { inputPokeFilter } from "../../utils/PokeApi/filterNamePockemons";
 import { selectComp } from "../../components/Select/selectComponent";
 import { selectCompV } from "../../components/Select/selectComponentVariante";
-import { pokemonTypes } from "../../utils/mapTypesPokemon";
-import { filterTypes } from "../../utils/filterTypesPokemons";
-import { pokemonLocation } from "../../utils/mapLocationsPokemon";
-import { filterPlacePokemons } from "../../utils/filterRegionPokemon";
+import { pokemonTypes } from "../../utils/PokeApi/mapTypesPokemon";
+import { filterTypes } from "../../utils/PokeApi/filterTypesPokemons";
+import { pokemonLocation } from "../../utils/PokeApi/mapLocationsPokemon";
+import { filterPlacePokemons } from "../../utils/PokeApi/filterRegionPokemon";
 import { pokeApi } from "../../services/pokeApiService";
 
 export const getpokeAPI = async () => {
@@ -25,6 +25,8 @@ export const getpokeAPI = async () => {
     (ev) => playRoom()
   );
   divComp(divContainer, "divSelectores", "");
+  const logo = document.querySelector('.divSelectores');
+  logo.addEventListener('click',async(ev) =>await getpokeAPI())
   inputComponent(divContainer, "inputBusqueda", "text", "Introduce un nombre!");
   const types = await pokemonTypes();
   selectComp(divContainer, "pokemonTypes", "selectTypes", types);

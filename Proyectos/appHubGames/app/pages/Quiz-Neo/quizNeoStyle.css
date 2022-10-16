@@ -1,0 +1,62 @@
+
+.reloadButtonQuiz{
+   
+   font-variant: small-caps; 
+   grid-column: 2/3;
+   grid-row: 1/2;
+   border: unset;
+   color: white;
+   background-color: inherit;
+}
+.reloadButtonQuiz:hover{
+  border-top:.125rem solid white;
+  border-bottom: .125rem solid white;
+  border-left: none;
+  border-right: none;
+
+}
+
+.parragraphQuiz{
+    text-align: center;
+    font-size: 2rem;
+    grid-row: 2/3;
+    grid-column:3/11 ;
+    color: white;
+    font-variant: small-caps;
+}
+.parragraphQuestion{
+   color: white;
+   text-align: center;
+   font: bold 1.5rem small-caps;
+}
+.parragraphAnswer{
+   color: black;
+   font: bold 1.5rem small-caps;
+   text-align: center;
+}
+.questionQuiz{
+   border: .0625rem solid white;
+   border-radius: .625rem 1.25rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row:4/6;
+   grid-column: 2/12; 
+   background-color: white;
+   color: black;
+}
+
+.answerQuiz{
+    
+    border: .0625rem solid white;
+    border-radius: .625rem 1.25rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:black;
+    grid-row:7/12;
+    grid-column: 2/12; 
+}

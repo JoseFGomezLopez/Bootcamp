@@ -1,4 +1,4 @@
 import './style.css'
-import { getLoggin } from './pages/homePage/home'
+import { getLoggin } from './pages/home/home'
 
 getLoggin();
