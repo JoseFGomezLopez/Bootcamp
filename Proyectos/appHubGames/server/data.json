@@ -3,43 +3,32 @@
     {
       "id": 1,
       "pregunta": "¿Quién inventó la primera televisión?",
-      "respuesta1": "Paul Nipkow",
-      "respuestaCorrecta": "John Logie Baird",
-      "respuesta2": "Galileo Galilei",
-      "respuesta3": "Manfred von Ardenne"
+      "respuestas": ["Paul Nipkow", "John Logie Baird", "Galileo Galilei","Manfred von Ardenne"],
+      "correcta" : "John Logie Baird"
     },
     {
       "id": 2,
       "pregunta": "¿Quién inventó el primer coche con motor de coumbustión interna?",
-      "respuesta1": "Nikolaus Otto",
-      "respuesta2": "Karl Benz",
-      "respuestaCorrecta": "Etienne Lenoir" ,
-      "respuesta3": "Rudolf Diesel"
+      "respuestas": [ "Nikolaus Otto","Karl Benz", "Etienne Lenoir" ,"Rudolf Diesel"],
+      "correcta": "Etienne Lenoir"
     },
     {
       "id": 3,
       "pregunta": "¿Quién inventó internet?",
-      "respuesta1": "Tim Berners-Lee",
-      "respuesta2": "Paul Otlet",
-      "respuesta3": "Joseph Carl Robnett Licklide",
-      "respuestaCorrecta": "Departamento de Defensa de Estados Unidos"
-      
+      "respuestas": [ "Tim Berners-Lee","Paul Otlet", "Joseph Carl Robnett Licklide","Departamento de Defensa de Estados Unidos"],
+      "correcta" : "Departamento de Defensa de Estados Unidos"
     },
     {
       "id": 4,
       "pregunta": "¿Quién inventó la bicicleta de pedales?",
-      "respuestaCorrecta": "Kirkpatrick Macmillan",
-      "respuesta1": "Karl Drais",
-      "respuesta2": "John Boyd Dunlop",
-      "respuesta3": "Leonardo da Vinci"
+      "respuestas": [ "Kirkpatrick Macmillan","Karl Drais","John Boyd Dunlop","Leonardo da Vinci"],
+      "correcta" : "Kirkpatrick Macmillan"
     },
     {
       "id": 5,
       "pregunta": "¿Quién inventó la imprenta?",
-      "respuesta1": "Juan Parx de Heidelberg",
-      "respuestaCorrecta": "Johann Gutenberg",
-      "respuesta2": "Jacobo Vitzlán",
-      "respuesta3": "Jaime Mesnier"
+      "respuestas":[ "Juan Parx de Heidelberg", "Johann Gutenberg", "Jacobo Vitzlán", "Jaime Mesnier"],
+      "correcta" : "Johann Gutenberg"
     }
   ]
 }

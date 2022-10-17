@@ -1,6 +1,6 @@
 
 .reloadButtonQuiz{
-   
+   cursor: pointer;
    font-variant: small-caps; 
    grid-column: 2/3;
    grid-row: 1/2;
@@ -25,11 +25,12 @@
     font-variant: small-caps;
 }
 .parragraphQuestion{
-   color: white;
+   color: black;
    text-align: center;
    font: bold 1.5rem small-caps;
 }
 .parragraphAnswer{
+   cursor:pointer;
    color: black;
    font: bold 1.5rem small-caps;
    text-align: center;

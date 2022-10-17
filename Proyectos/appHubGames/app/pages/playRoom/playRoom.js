@@ -5,6 +5,7 @@ import { parragraphC } from "../../components/Parragraph/parragraphComponent";
 import { createUser, user } from "../../utils/Home/createUser";
 import { getpokeAPI } from "../pokeAPI/pokeApi";
 import { getQuiz } from "../Quiz-Neo/quiz";
+import { tresEnRaya } from "../TresEnRaya/tresEnRaya";
 
 export const playRoom = () => {
   const header = document.querySelector("header");
@@ -21,7 +22,7 @@ export const playRoom = () => {
     "TRES EN RAYA",
     "Click Here!",
     "click",
-    (ev) => {}
+    (ev) => { tresEnRaya(); }
   );
   buttonComponent(
     divContainer,
@@ -53,9 +54,7 @@ export const playRoom = () => {
     "POKE API",
     "Click Here!",
     "click",
-    (ev) => {
-      getpokeAPI();
-    }
+    (ev) => { getpokeAPI();}
   );
   buttonComponent(
     divContainer,
@@ -63,8 +62,6 @@ export const playRoom = () => {
     "QUIZZ-NEO",
     "Click Here!",
     "click",
-    (ev) => {
-      getQuiz();
-    }
+    (ev) => { getQuiz();}
   );
 };
