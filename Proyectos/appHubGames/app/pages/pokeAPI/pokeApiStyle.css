@@ -45,6 +45,9 @@
 .inputBusqueda:hover{
     border: .125rem solid white;
 }
+.inputBusqueda:focus{
+    border: .125rem solid white;
+}
 
 .selectTypes, .selectLocations{
     border-top: .0625rem solid white;
@@ -56,6 +59,9 @@
 }
 
 .selectTypes:hover, .selectLocations:hover{
+    border:.125rem solid white;
+}
+.selectTypes:focus, .selectLocations:focus{
     border:.125rem solid white;
 }
 .selectTypesOption, .selectLocationsOption{

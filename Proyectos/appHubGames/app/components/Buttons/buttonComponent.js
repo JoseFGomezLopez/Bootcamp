@@ -1,11 +1,4 @@
-export const buttonComponent = (
-  container,
-  className,
-  textContent,
-  title,
-  evento,
-  callBack
-) => {
+export const buttonComponent = (container,className,textContent,title,evento,callBack) => {
   const btn = document.createElement("button");
   btn.classList.add(className);
   btn.innerText = textContent;

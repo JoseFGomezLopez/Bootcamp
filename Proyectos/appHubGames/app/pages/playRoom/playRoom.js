@@ -6,6 +6,8 @@ import { createUser, user } from "../../utils/Home/createUser";
 import { getpokeAPI } from "../pokeAPI/pokeApi";
 import { getQuiz } from "../Quiz-Neo/quiz";
 import { tresEnRaya } from "../TresEnRaya/tresEnRaya";
+import { hangMan } from "../hangMan/hangMan";
+
 
 export const playRoom = () => {
   const header = document.querySelector("header");
@@ -46,7 +48,7 @@ export const playRoom = () => {
     "HANG MAN",
     "Click Here!",
     "click",
-    (ev) => {}
+    (ev) => {hangMan()}
   );
   buttonComponent(
     divContainer,

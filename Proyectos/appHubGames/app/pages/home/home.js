@@ -20,23 +20,7 @@ export const getLoggin = () => {
   parragraphC(header, "colorButtonText", "New Color!");
   parragraphC(divContainer, "parragraphLoggin", "NEOLAND");
   parragraphC(divContainer, "parragraphLoggin", "HUB GAMES");
-  parragraphC(
-    divContainer,
-    "parragraphLoggin",
-    "Introduce tu nombre de usuario:"
-  );
-  inputComponent(
-    divContainer,
-    "inputLoggin",
-    "text",
-    "Introduce your user name"
-  );
-  buttonComponent(
-    divContainer,
-    "logButton",
-    "👍",
-    "Click Here!",
-    "click",
-    (ev) => createUser()
-  );
+  parragraphC(divContainer,"parragraphLoggin","Introduce tu nombre de usuario:");
+  inputComponent(divContainer,"inputLoggin","text","Introduce your user name");
+  buttonComponent(divContainer,"logButton","👍","Click Here!","click",(ev) => createUser());
 };
