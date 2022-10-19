@@ -10,6 +10,7 @@
 }
 
 .reloadButton:hover{
+    cursor: pointer;
     border-top: .125rem solid white;
     border-bottom: .125rem solid white;
 }

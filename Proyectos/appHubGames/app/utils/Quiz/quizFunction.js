@@ -6,24 +6,11 @@ const quizData = await quizApi();
 
 export const quizInit = async (counter = 0) => {
   const divQuestions = document.querySelector(".questionQuiz");
-
-  parragraphC(
-    divQuestions,
-    "parragraphQuestion",
-    `${quizData[counter].pregunta}`
-  );
-
-  const divAnswers = document.querySelector(".answerQuiz");
-
+   parragraphC(divQuestions,"parragraphQuestion",`${quizData[counter].pregunta}`);
+ const divAnswers = document.querySelector(".answerQuiz");
   for (const respuesta of quizData[counter].respuestas) {
-    parragraphComponentId(
-      divAnswers,
-      `${respuesta}`,
-      `parragraphAnswer`,
-      `${respuesta}`
-    );
+    parragraphComponentId(divAnswers,`${respuesta}`,`parragraphAnswer`,`${respuesta}`);
     const p = document.getElementById(`${respuesta}`);
-    console.log(p);
     p.addEventListener("click", (ev) => {
       if (
         `${respuesta}` === `${quizData[counter].correcta}` &&
