@@ -10,6 +10,8 @@ import { divCompLiteral } from '../../components/Div/divComponentLitealString';
 export const hangMan = () =>{
     
     const words = ["arrays","boolean","number","string","undefined","null","object"];
+    let counter = 0;
+    let counterVidas = 5;
 
     const divContainer = document.querySelector('#app');
     divContainer.innerHTML = '';
@@ -20,11 +22,12 @@ export const hangMan = () =>{
     divComp(container,'letterContainer','letterContainer','');
     divComp(container,"divContainerLetters","divContainerLetters",'') 
     const divContainerLetters = document.querySelector('#divContainerLetters')
+    divComp(container,"counterLifesBox",'counterLifesBox','');
+    const counterLifesBox = document.querySelector('.counterLifesBox')
+    divCompLiteral(counterLifesBox,'counterLifes','counterLifes',`${counterVidas}`);
     
-    let counter = 0;
-    let counterVidas = 5;
     const initLetters = (counter) => {
-        divCompLiteral(container,'counterLifes','counterLifes',`${counterVidas}`);  
+          
         words[counter].split('').forEach((element,i)=>{
         divCompLiteral(divContainerLetters,'letterBox','letterBox',`<span id="span${i}" class="letter">${element}</span>`);
         
@@ -60,7 +63,8 @@ export const hangMan = () =>{
         const counterLifes = document.querySelector('.counterLifes')
         counterLifes.innerText=counterVidas;
         if(counterVidas==0){
-         divContainer.innerHTML =`<img class="muerte" src="../../public/MussoliniAhorcado.jpg">`
+         counterLifesBox='';
+         container.innerHTML =`<img class="muerte" src="../../public/MussoliniAhorcado.jpg">`
          setTimeout(() => {
             hangMan();
         }, 3000);
@@ -70,7 +74,11 @@ export const hangMan = () =>{
              
    }
     inputComponentPattern(container,'inputHangMan','text','Introduce una letra','[A-Za-z]{,1}');
-    buttonComponent(container,"verifyButton",'Apply','Boton de aplicar letra','click',()=>tryLetter());
+    const input = document.querySelector('.inputHangMan');
+    buttonComponent(container,"verifyButton",'Apply','Boton de aplicar letra','click',(ev)=>{
+        tryLetter();
+        input.textContent = '';
+    });
    
 
 }
