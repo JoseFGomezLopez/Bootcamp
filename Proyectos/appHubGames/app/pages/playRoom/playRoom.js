@@ -7,12 +7,12 @@ import { getpokeAPI } from "../pokeAPI/pokeApi";
 import { getQuiz } from "../Quiz-Neo/quiz";
 import { tresEnRaya } from "../TresEnRaya/tresEnRaya";
 import { hangMan } from "../hangMan/hangMan";
+import { getMemoryGame } from "../memoryGame/memoryGame";
 
 
 export const playRoom = () => {
   const header = document.querySelector("header");
   const divContainer = document.querySelector("#app");
-
   divContainer.innerHTML = "";
   divContainer.classList.remove("home");
   divContainer.classList.add("playRoom");
@@ -24,7 +24,7 @@ export const playRoom = () => {
     "TRES EN RAYA",
     "Click Here!",
     "click",
-    (ev) => { tresEnRaya(); }
+    (ev) => tresEnRaya()
   );
   buttonComponent(
     divContainer,
@@ -40,7 +40,7 @@ export const playRoom = () => {
     "MEMORY GAME",
     "Click Here!",
     "click",
-    (ev) => {}
+    (ev) => getMemoryGame()
   );
   buttonComponent(
     divContainer,
@@ -48,7 +48,7 @@ export const playRoom = () => {
     "HANG MAN",
     "Click Here!",
     "click",
-    (ev) => {hangMan()}
+    (ev) => hangMan()
   );
   buttonComponent(
     divContainer,
@@ -56,7 +56,7 @@ export const playRoom = () => {
     "POKE API",
     "Click Here!",
     "click",
-    (ev) => { getpokeAPI();}
+    (ev) => getpokeAPI()
   );
   buttonComponent(
     divContainer,
@@ -64,6 +64,6 @@ export const playRoom = () => {
     "QUIZZ-NEO",
     "Click Here!",
     "click",
-    (ev) => { getQuiz();}
+    (ev) => getQuiz()
   );
 };

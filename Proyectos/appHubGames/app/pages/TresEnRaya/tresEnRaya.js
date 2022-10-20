@@ -19,7 +19,7 @@ export const tresEnRaya = () => {
       const pos = document.getElementById(`div${i}`);
       tablero.push(pos);
       pos.addEventListener("click", (e) => {
-        jugar(tablero.lastIndexOf(e.target));
+        jugar(tablero.indexOf(e.target));
         ia();
       });
     } else {
@@ -68,7 +68,7 @@ const idJugadas = partidaJugador.map((element)=>(element.id))
       alert(`EnhoraBuena ${user} has ganado!!`);
       tresEnRaya();
       }
-const jugadasIa = partidaIA.map((element)=>(element.id))
+    const jugadasIa = partidaIA.map((element)=>(element.id))
     if ((jugadasIa.includes("div1") && jugadasIa.includes("div2") && jugadasIa.includes("div3"))
     ||(jugadasIa.includes("div1") && jugadasIa.includes("div5") && jugadasIa.includes("div9"))
     ||(jugadasIa.includes("div2") && jugadasIa.includes("div5") && jugadasIa.includes("div8"))   

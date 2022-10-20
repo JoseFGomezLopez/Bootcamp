@@ -1,0 +1,28 @@
+
+.containerMemory{
+    
+    grid-row: 2/12;
+    grid-column: 2/12;
+    display: grid;
+    /*grid-template-columns: repeat(8 1fr);
+    grid-template-rows: repeat(3 1fr);*/
+    grid-gap: 1rem;
+}
+.imagesMemo{
+    
+    width: 6.25rem;
+    height: 6.25rem;
+    border: .0625rem solid white;
+    border-radius: .625rem;
+}
+
+.imageBox{
+    
+    width: 6.25rem;
+    height: 6.25rem;
+    border: .0625rem solid white;
+    border-radius: .625rem;
+    background-image: url('../../public/grecas2.png');
+    background-size: cover;
+ }
+

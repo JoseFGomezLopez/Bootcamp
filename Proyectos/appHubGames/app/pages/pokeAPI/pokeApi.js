@@ -16,14 +16,7 @@ import { pokeApi } from "../../services/pokeApiService";
 export const getpokeAPI = async () => {
   const divContainer = document.querySelector("#app");
   divContainer.innerHTML = "";
-  buttonComponent(
-    divContainer,
-    "reloadButton",
-    "HOME",
-    "reloadPlayRoom",
-    "click",
-    (ev) => playRoom()
-  );
+  buttonComponent(divContainer,"reloadButton","HOME","reloadPlayRoom","click",(ev) => playRoom());
   divComp(divContainer, "divSelectores", "");
   const logo = document.querySelector('.divSelectores');
   logo.addEventListener('click',async(ev) =>await getpokeAPI())
