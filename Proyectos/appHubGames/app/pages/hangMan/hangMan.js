@@ -63,7 +63,7 @@ export const hangMan = () =>{
         const counterLifes = document.querySelector('.counterLifes')
         counterLifes.innerText=counterVidas;
         if(counterVidas==0){
-         counterLifesBox='';
+         counterLifesBox.innerHTML='';
          container.innerHTML =`<img class="muerte" src="../../public/MussoliniAhorcado.jpg">`
          setTimeout(() => {
             hangMan();
