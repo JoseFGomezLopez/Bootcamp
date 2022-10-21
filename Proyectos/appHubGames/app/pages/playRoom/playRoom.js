@@ -8,7 +8,7 @@ import { getQuiz } from "../Quiz-Neo/quiz";
 import { tresEnRaya } from "../TresEnRaya/tresEnRaya";
 import { hangMan } from "../hangMan/hangMan";
 import { getMemoryGame } from "../memoryGame/memoryGame";
-
+import { getWhakaTopo } from "../whakaTopo/whakaTopo";
 
 export const playRoom = () => {
   const header = document.querySelector("header");
@@ -32,7 +32,7 @@ export const playRoom = () => {
     "WHAKA-TOPO",
     "Click Here!",
     "click",
-    (ev) => {}
+    (ev) => getWhakaTopo()
   );
   buttonComponent(
     divContainer,
