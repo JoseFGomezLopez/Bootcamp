@@ -64,7 +64,7 @@ export const hangMan = () =>{
         counterLifes.innerText=counterVidas;
         if(counterVidas==0){
          counterLifesBox.innerHTML='';
-         container.innerHTML =`<img class="muerte" src="../../public/MussoliniAhorcado.jpg">`
+         divContainer.innerHTML =`<img class="muerte" src="../../public/MussoliniAhorcado.jpg" width="100vw">`
          setTimeout(() => {
             hangMan();
         }, 3000);
