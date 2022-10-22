@@ -13,7 +13,7 @@ export const getWhakaTopo = () => {
     parragraphC(divContainer,'counterTopo',`Score  ${counter}`)
     divComp(divContainer,'containerWhakaTopo','containerWhakaTopo','');
     
-    const container = document.querySelector('#containerWhakaTopo');
+    const container = document.getElementById('containerWhakaTopo');
      
     setInterval(() => {
         imageComp(container,'topoGigo','topoGigo','Topo','/../../public/topoWhaka.png');

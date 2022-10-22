@@ -1,3 +1,5 @@
+import { errorComponent } from '../../app/components/Error/error'
+
 let mapArray;
 export const pokeApi = async () => {
   try {
@@ -8,7 +10,7 @@ export const pokeApi = async () => {
       const data = await response.json();
       arrayPockemon.push(data);
     }
-    // console.log(arrayPockemon);
+    console.log(arrayPockemon);
     for (const pockemon of arrayPockemon) {
       mapArray.push({
         id: pockemon.id,
@@ -21,7 +23,9 @@ export const pokeApi = async () => {
         typeImage : pockemon.abilities[0].ability.name,
       });
     }
-  } catch (error) {}
+  } catch (error) {
+      errorComponent();
+  }
 
   return mapArray;
 };

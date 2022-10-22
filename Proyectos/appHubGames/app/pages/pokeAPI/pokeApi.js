@@ -12,6 +12,8 @@ import { filterTypes } from "../../utils/PokeApi/filterTypesPokemons";
 import { pokemonLocation } from "../../utils/PokeApi/mapLocationsPokemon";
 import { filterPlacePokemons } from "../../utils/PokeApi/filterRegionPokemon";
 import { pokeApi } from "../../services/pokeApiService";
+import { Abstractfilter } from "../../utils/PokeApi/abstractfilterPokemon";
+import { pockeCard } from "../../components/PockemonCards/pockeCard";
 
 export const getpokeAPI = async () => {
   const divContainer = document.querySelector("#app");
@@ -33,14 +35,14 @@ export const getpokeAPI = async () => {
     "input",
     async (ev) => await inputPokeFilter(input.value)
   );
+  
+  const pokemonsMapped = await pokeApi();
+  
   const select = document.querySelector(".selectTypes");
-  select.addEventListener(
-    "change",
-    async (ev) => await filterTypes(ev.target.value)
-  );
+  select.addEventListener("change",async (ev) => await filterTypes(ev.target.value)
+                           //  Abstractfilter(pokemonsMapped,"type",'.container',pockeCard,ev.target.value) 
+    );
   const selectLocation = document.querySelector(".selectLocations");
-  selectLocation.addEventListener(
-    "change",
-    async (ev) => await filterPlacePokemons(ev.target.value)
+  selectLocation.addEventListener("change",async (ev) => await filterPlacePokemons(ev.target.value)
   );
 };

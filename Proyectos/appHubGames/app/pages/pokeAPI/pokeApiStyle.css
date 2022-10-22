@@ -1,3 +1,10 @@
+@media screen and (max-with: 400px){
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        gap:.3rem;
+    }
+  }
 
 .reloadButton{
     font-variant: small-caps;
@@ -83,4 +90,52 @@
     min-height: 4.125rem;
     width: 8.375rem;
     height: 13rem;
+}
+.grass{
+    background-image: -webkit-linear-gradient(left,lightgreen,darkgray);
+}
+.fire{
+    background-image:  -webkit-linear-gradient(left,lightcoral,darkgray);
+}
+.water{
+    background-image: -webkit-linear-gradient(top,rgb(9, 237, 237),darkblue);
+}
+.dragon{
+    background-image: -webkit-linear-gradient(bottom,darkred,lightcoral);
+}
+.bug{
+    background-image: -webkit-radial-gradient(right, brown,lightgray);
+}
+ .electric{
+    background-image: -webkit-linear-gradient(left,darksalmon,darkorange); 
+}
+.poison{
+    background-image: -webkit-linear-gradient(top,black,darkgray);
+}
+.fighting{
+    background-image:  -webkit-linear-gradient(left,chartreuse,darkgreen);
+}
+.psychic{
+    background-image: -webkit-radial-gradient(top,ellipse,darkmagenta,magenta);
+}
+.rock{
+    background-image: -webkit-radial-gradient(top,ellipse,lightgray, darkgrey);
+}
+.ground{
+    background-image: -webkit-radial-gradient(top,ellipse,rgb(218, 227, 89), darkkhaki);
+}
+.normal{
+    background-image: -webkit-radial-gradient(top,ellipse,rgb(225, 92, 4), peru);
+}
+.normal{
+    background-image: -webkit-radial-gradient(top,ellipse,darkmagenta, darkgoldenrod);
+}
+.fairy{
+    background-image: -webkit-radial-gradient(top,ellipse,lightgreen, green);
+}
+.ghost{
+    background-image: -webkit-radial-gradient(top,ellipse,rgb(236, 212, 236), dimgray);
+}
+.ice{
+    background-image: -webkit-radial-gradient(top,ellipse,rgb(174, 239, 247), rgb(4, 83, 110));
 }

@@ -25,4 +25,11 @@
     background-image: url('../../public/grecas2.png');
     background-size: cover;
  }
-
+ @media screen and (max-with: 400px){
+    .containerMemory{
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap:.3rem;
+    }
+ }

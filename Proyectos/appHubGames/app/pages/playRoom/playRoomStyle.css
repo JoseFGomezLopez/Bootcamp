@@ -5,6 +5,15 @@
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
 }
+@media screen and (max-with: 400px){
+    .playRoom{
+        display: flex;
+        flex-flow: column wrap;
+        gap:.3rem;
+    }
+     
+
+  }
 .playerRoomParragraph{
     color: white;
     grid-row: 1/2;
@@ -13,7 +22,7 @@
 }
 .roomButton-raya{
     background-image: url('../../public/tresEnRaya.jpg');
-    grid-row:2/6;
+    grid-row:3/6;
     grid-column: 2/6;
 }
 .roomButton-whakaTopo{
@@ -21,7 +30,7 @@
     background-image: url('../../public/topo.png');
     background-size: contain;
     background-repeat: repeat-x;
-    grid-row:2/6;
+    grid-row:3/6;
     grid-column:8/12;
 }
 .roomButton-memoryGame{

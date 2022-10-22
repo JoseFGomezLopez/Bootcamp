@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@media screen and (max-with: 400px){
+  #app{
+      display: flex;
+      flex-flow: column wrap;
+      gap:.3rem;
+  }
+}

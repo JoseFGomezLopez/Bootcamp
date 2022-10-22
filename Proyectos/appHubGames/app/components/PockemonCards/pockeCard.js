@@ -1,7 +1,7 @@
 export const pockeCard = ({id,name,image,typeName,height,experience}) => {
     
     return `
-    <figure class="pockeClass">
+    <figure class="pockeClass ${typeName}">
     <h3>${name}</h3>
     <h5>Height: ${height}</h5>
     <h5>Experience: ${experience}</h5>
