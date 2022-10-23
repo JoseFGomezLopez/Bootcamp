@@ -9,14 +9,16 @@ export const getWhakaTopo = () => {
     let counter = 0; 
     const divContainer = document.getElementById('app');
     divContainer.innerHTML = '';
-    buttonComponent(divContainer,"reloadButtonQuiz","HOME","reloadPlayRoom","click",(ev) => playRoom());
+    buttonComponent(divContainer,"reloadButtonQuiz","HOME","reloadPlayRoom","click",(ev) =>{
+        clearInterval(identificador); 
+        playRoom()});
     parragraphC(divContainer,'counterTopo',`Score  ${counter}`)
     divComp(divContainer,'containerWhakaTopo','containerWhakaTopo','');
     
     const container = document.getElementById('containerWhakaTopo');
     
      
-    setInterval(() => {
+   const identificador =  setInterval(() => {
         imageComp(container,'topoGigo','topoGigo','Topo','/../../public/topoWhaka.png');
         const topo = document.querySelector('.topoGigo');
         topo.style.top = `${Math.trunc(Math.random()*21+1-1)}rem`
