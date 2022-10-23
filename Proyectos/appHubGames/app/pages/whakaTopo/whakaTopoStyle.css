@@ -1,5 +1,5 @@
 .containerWhakaTopo{
-    
+    background-image: url('app/public/campo.webp');
     cursor: pointer;
     border: .1875rem solid white;
     position: relative;

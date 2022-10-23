@@ -14,13 +14,17 @@ export const getWhakaTopo = () => {
     divComp(divContainer,'containerWhakaTopo','containerWhakaTopo','');
     
     const container = document.getElementById('containerWhakaTopo');
+    
      
     setInterval(() => {
         imageComp(container,'topoGigo','topoGigo','Topo','/../../public/topoWhaka.png');
         const topo = document.querySelector('.topoGigo');
-        topo.style.top = `${Math.trunc(Math.random()*440+1-1)}px`
-        topo.style.left = `${Math.trunc(Math.random()*680+1-1)}px`
+        topo.style.top = `${Math.trunc(Math.random()*21+1-1)}rem`
+        topo.style.left = `${Math.trunc(Math.random()*56+1-1)}rem`
         topo.addEventListener('click',(e)=>{jugarTopo(e.target);console.log(e.target)})
+        setTimeout(() => {
+            container.removeChild(topo); 
+        }, 1500);
     }, 2000)
     
         

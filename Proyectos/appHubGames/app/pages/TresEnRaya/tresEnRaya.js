@@ -75,11 +75,11 @@ export const tresEnRaya = () => {
     alert(`${user} has perdido!! Sigue intentandolo!`);
     tresEnRaya();
     }     
-   }
-   if(tablero.length==0){ 
+   }else if(tablero.length==0){ 
     alert("EMPATE!! Prueba de Nuevo!!");
     tresEnRaya()
     
   }
+   
  }  
 }

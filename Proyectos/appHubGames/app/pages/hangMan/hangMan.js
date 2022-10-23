@@ -44,17 +44,13 @@ export const hangMan = () =>{
              const span = document.getElementById(`span${i}`)
              if(element.toLowerCase()===input.value.toLocaleLowerCase()){
              span.style.visibility = "visible"
-             console.log(letter)
-             validacion.push('1')
-             console.log(validacion)
+             validacion.push('1');
              if(letter.length == validacion.length){
-                console.log(letter.length)
-                console.log(validacion.length)
                 counter++;
                 divContainerLetters.innerHTML='';
                 initLetters(counter);
                 validacion.splice(0,validacion.length);
-                console.log(validacion)
+               
             }
         }
     })

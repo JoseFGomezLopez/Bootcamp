@@ -1,5 +1,11 @@
 import { errorComponent } from '../../app/components/Error/error'
 
+export const getPockeApiMapped = () => {
+  pokeApi();
+  return mapArray;
+}
+
+
 let mapArray;
 export const pokeApi = async () => {
   try {
@@ -10,7 +16,6 @@ export const pokeApi = async () => {
       const data = await response.json();
       arrayPockemon.push(data);
     }
-    console.log(arrayPockemon);
     for (const pockemon of arrayPockemon) {
       mapArray.push({
         id: pockemon.id,

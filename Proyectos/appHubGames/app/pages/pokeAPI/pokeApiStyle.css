@@ -27,6 +27,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 2.5rem;
 }
 
 .divSelectores{
@@ -79,6 +80,7 @@
 .pockeClass{
     font-variant: small-caps;
     border : 1px solid white;
+    border-radius: .1875rem .3125rem;
     box-shadow: white 4px 4px 15px;
     color:whitesmoke;
     display: flex;
@@ -90,6 +92,10 @@
     min-height: 4.125rem;
     width: 8.375rem;
     height: 13rem;
+    transition: all 2s;
+}
+.pockeClass:hover{
+    transform: scale(1.5);
 }
 .grass{
     background-image: -webkit-linear-gradient(left,lightgreen,darkgray);

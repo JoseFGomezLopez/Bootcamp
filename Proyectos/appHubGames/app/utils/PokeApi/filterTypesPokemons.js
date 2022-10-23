@@ -6,7 +6,6 @@ export const filterTypes = async (select) => {
   const filteredPokemons = pokemons.filter(
     (element) => element.typeName == select
   );
-  console.log(filteredPokemons);
   const container = document.querySelector(".container");
   container.innerHTML = "";
    filteredPokemons.forEach((element)=> 
