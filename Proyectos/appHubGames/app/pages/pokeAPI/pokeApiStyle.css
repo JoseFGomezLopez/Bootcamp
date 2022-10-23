@@ -1,5 +1,5 @@
 @media screen and (max-with: 400px){
-    .container{
+    #app{
         display: flex;
         flex-flow: column wrap;
         gap:.3rem;

@@ -9,6 +9,7 @@ import { tresEnRaya } from "../TresEnRaya/tresEnRaya";
 import { hangMan } from "../hangMan/hangMan";
 import { getMemoryGame } from "../memoryGame/memoryGame";
 import { getWhakaTopo } from "../whakaTopo/whakaTopo";
+import { getLoggin } from "../home/home";
 
 export const playRoom = () => {
   const header = document.querySelector("header");
@@ -16,7 +17,11 @@ export const playRoom = () => {
   divContainer.innerHTML = "";
   divContainer.classList.remove("home");
   divContainer.classList.add("playRoom");
-
+   
+  buttonComponent(divContainer,"reloadButton","LogOut","reloadPlayRoom","click",(ev) => {
+     window.localStorage.clear();  
+     window.location.reload();
+  });
   parragraphC(divContainer, "playerRoomParragraph", `Bienvenido 👋 ${user}`);
   buttonComponent(
     divContainer,
