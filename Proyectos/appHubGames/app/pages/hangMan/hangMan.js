@@ -47,6 +47,9 @@ export const hangMan = () =>{
              validacion.push('1');
              if(letter.length == validacion.length){
                 counter++;
+                counterVidas=5;
+                const counterLifes = document.querySelector('.counterLifes')
+                counterLifes.innerText=counterVidas;   
                 divContainerLetters.innerHTML='';
                 initLetters(counter);
                 validacion.splice(0,validacion.length);
