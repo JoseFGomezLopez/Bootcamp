@@ -2,9 +2,6 @@ import { quizApi } from "../../services/quizService";
 import { parragraphC } from "../../components/Parragraph/parragraphComponent";
 import { parragraphComponentId } from "../../components/Parragraph/parragraphComponentId";
 
-
-
-
 export const quizInit = async (counter = 0) => {
   const quizData = await quizApi();
   const divQuestions = document.querySelector(".questionQuiz");
