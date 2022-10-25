@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
 import './App.css'
+import React, { useState } from 'react'
+import { Card } from './components/CardComponent/cardComponent';
 
 const charactersMock = [
   {
@@ -37,14 +38,8 @@ const App = () => {
     <>
       {
         charactersList.map((character)=>(
-          <div key={character.id}>
-          <h2>Id : {character.id}</h2>
-          <img src={character.image} />
-          <h2>Name : {character.name}</h2>
-          <h2>Status : {character.status}</h2>
-
-         </div>
-          ))
+        <Card key={character.id} character={character} />
+        ))
       }
     </>
   )
