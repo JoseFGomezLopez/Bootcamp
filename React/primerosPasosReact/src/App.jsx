@@ -21,8 +21,6 @@ const App = () => {
   
   const myState = useState(charactersMock);
 
-  const characters = useState[0];
-  const setCharacters = useState[1];
 
   const [charactersList,setCharacterList] = useState([]);
   
