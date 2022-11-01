@@ -1,12 +1,12 @@
-import './header.css'
-import Nav from "../NavBar/Nav"
+import "./header.css";
+import Nav from "../NavBar/Nav";
 
 const Header = () => {
   return (
     <header className="header">
-        <Nav />
+      <Nav />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

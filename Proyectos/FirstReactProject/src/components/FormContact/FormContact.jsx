@@ -2,12 +2,13 @@ import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import { PostContact } from "../../services/PostServices";
 import { useState } from "react";
+import "./formPublic.css";
 
 const FormContact = () => {
   const [name, setName] = useState("");
   const [telephoneNumber, setTelephoneNumber] = useState("");
   const [email, setEmail] = useState("");
-  const [description,setDescription] = useState("");
+  const [description, setDescription] = useState("");
 
   const createContact = (e) => {
     e.preventDefault();
@@ -16,7 +17,7 @@ const FormContact = () => {
       name: name,
       telephoneNumber: telephoneNumber,
       email: email,
-      description : description
+      description: description,
     };
     postContact(contact);
     //<PostContact contact={contact}/>;
@@ -25,7 +26,7 @@ const FormContact = () => {
   const postContact = async (contact) => {
     axios({
       method: "post",
-      url: "http://localhost:3000/contacts",
+      url: "http://localhost:8080/contacts",
       data: contact,
     });
   };
@@ -79,7 +80,7 @@ const FormContact = () => {
             placeholder="Motivo del contacto"
             className="contactTextAreaForm"
             onChange={(e) => setDescription(e.target.value)}
-            spellCheck = {true}
+            spellCheck={true}
           />
         </fieldset>
         <input type="submit" value="Enviar" className="buttonFormHome" />

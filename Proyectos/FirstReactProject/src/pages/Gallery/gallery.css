@@ -1,0 +1,32 @@
+.difusionContainer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+.difusionContainer > .selectFilter .selectFilterSize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100vw;
+    color: white;
+}
+.difusionContainer > .selectFilter .selectFilterSize > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.gallerySectionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap:1rem;
+    margin:.225rem;
+}

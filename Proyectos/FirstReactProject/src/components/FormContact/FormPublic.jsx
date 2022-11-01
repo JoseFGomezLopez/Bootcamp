@@ -3,9 +3,8 @@ import "./formPublic.css";
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
-import FirstCard from "../../components/Cards/FirstCard";
+import SecondCard from "../../components/Cards/SecondCard";
 import ContactCard from "../Cards/ContactCard";
-import { Link } from "react-router-dom";
 
 const FormPublic = () => {
   const [contact, setContact] = useState({
@@ -19,6 +18,7 @@ const FormPublic = () => {
     id: 0,
     name: "",
     image: "",
+    size: "",
     description: "",
   });
 
@@ -35,8 +35,8 @@ const FormPublic = () => {
     const id2 = id;
     setContact({ ...contact, id: id });
     setPet({ ...pet, id: id2 });
-    postDifusion("http://localhost:3000/dogs", pet);
-    postDifusion(" http://localhost:3000/contacts", contact);
+    postDifusion("http://localhost:8080/dogs", pet);
+    postDifusion(" http://localhost:8080/contacts", contact);
   };
 
   return (
@@ -93,7 +93,7 @@ const FormPublic = () => {
               }}
             />
           </fieldset>
-          <fieldset className="fieldsetFormPublic">
+          <fieldset className="fieldsetFormPublic fieldserPets">
             <legend>Mascota</legend>
             <label htmlFor="name">Pet name</label>
             <input
@@ -123,6 +123,19 @@ const FormPublic = () => {
                 });
               }}
             />
+            <label htmlFor="size">Size</label>
+            <input
+              type="text"
+              className="contactInputForm"
+              required
+              placeholder={"Pet size"}
+              onChange={(e) => {
+                setPet({
+                  ...pet,
+                  size: e.target.value,
+                });
+              }}
+            />
             <label htmlFor="description">Description</label>
             <textarea
               className="contactInputForm"
@@ -147,9 +160,10 @@ const FormPublic = () => {
           mail={contact.contactEmail}
         />
 
-        <FirstCard
+        <SecondCard
           className="cardFormPublic"
           name={pet.name}
+          size={pet.size}
           image={pet.image}
           description={pet.description}
         />

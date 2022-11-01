@@ -1,5 +1,15 @@
-.figure{
-    width: 25rem;
-    height: 25rem;
-    color:white;
+.figure {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 25rem;
+  height: 25rem;
+  color: white;
+}
+.figure > img {
+  border-radius: 50%;
+  width: 20.125rem;
+  height: 20.25rem;
 }

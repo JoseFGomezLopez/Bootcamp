@@ -1,13 +1,19 @@
-import Parragraph from '../../components/Parragraph/Parragraph'
+import "./contact.css";
+import Parragraph from "../../components/Parragraph/Parragraph";
+import LinkContact from "../../components/ConctactLink/LinkContact";
 
 const Contact = () => {
   return (
-    <section>
-     <Parragraph text={'Ante cualquier duda o para cualquier consulta aqui proveemos distinta formas de contacto.'} />
-     <a href="mailto:fontanadeoro1983@gmail.com">Correo e-</a>
-     <a href="https://www.linkedin.com/feed/">linkedin</a>
+    <section className="contactSection">
+      <Parragraph
+        text={
+          "Para cualquier consulta aqui proveemos distintas formas de contacto:"
+        }
+      />
+      <LinkContact className={'contactLinks'}/>
+      <img className="logo" src='../server/Images/logo/logo ayuda y recate.jpg' alt="logo de ayuda y rescate"/>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

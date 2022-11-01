@@ -1,7 +1,5 @@
-const Parragraph = ({text}) => {
-  return (
-    <p>{text}</p>
-  )
-}
+const Parragraph = ({ text }) => {
+  return <p>{text}</p>;
+};
 
-export default Parragraph
+export default Parragraph;

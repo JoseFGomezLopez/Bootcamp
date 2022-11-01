@@ -1,15 +1,12 @@
-import './newPet.css'
-import FormPublic from "../../components/FormContact/FormPublic"
+import "./newPet.css";
+import FormPublic from "../../components/FormContact/FormPublic";
 
 const Difusion = () => {
   return (
-    
-    <section>
+    <section className="sectionDifusion">
       <FormPublic />
     </section>
-   
-    
-  )
-}
+  );
+};
 
-export default Difusion
+export default Difusion;

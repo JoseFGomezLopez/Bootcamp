@@ -1,13 +1,8 @@
-import React from "react";
+import "./detailCard.css";
 
-const DetailCardComponent = ({animal}) => {
+const DetailCardComponent = ({ animal }) => {
   return (
-    <figure>
-      <h2>{animal.name}</h2>
-     {/* <h2>{animal.contactTelephone}</h2> */}
-      <img src={animal.image} alt={animal.name} />
-      <h3>{animal.description}</h3>
-    </figure>
+    <img className="detailCard" src={animal.imageDetail} alt={animal.name} />
   );
 };
 

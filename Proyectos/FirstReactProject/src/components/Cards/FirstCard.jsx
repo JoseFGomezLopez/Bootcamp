@@ -1,5 +1,5 @@
 import Parragraph from "../Parragraph/Parragraph";
-
+import "./card.css";
 
 const FirstCard = ({ name, image, description }) => {
   return (

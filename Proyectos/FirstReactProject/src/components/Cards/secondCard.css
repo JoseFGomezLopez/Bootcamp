@@ -1,0 +1,13 @@
+.secondCard{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 36rem;
+    height: 15rem;
+    border: 0.0625rem solid white;
+    color: white;
+    font-variant: small-caps;
+}
