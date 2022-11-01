@@ -35,8 +35,8 @@ const FormPublic = () => {
     const id2 = id;
     setContact({ ...contact, id: id });
     setPet({ ...pet, id: id2 });
-    postDifusion("http://localhost:8080/dogs", pet);
-    postDifusion(" http://localhost:8080/contacts", contact);
+    postDifusion("https://proyectos-firstreactproject-server.onrender.com/dogs", pet);
+    postDifusion(" https://proyectos-firstreactproject-server.onrender.com/contacts", contact);
   };
 
   return (

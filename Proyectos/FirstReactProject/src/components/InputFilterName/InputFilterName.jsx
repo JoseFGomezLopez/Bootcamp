@@ -10,7 +10,7 @@ const InputFilterName = ({ className }) => {
 
   useEffect(() => {
     const getFilteredAnimal = async () => {
-      const res = await fetch(`http://localhost:3000/dogs?size=${filter}`);
+      const res = await fetch(`https://proyectos-firstreactproject-server.onrender.com/dogs?size=${filter}`);
       const data = await res.json();
       setFilterCollection(data);
       return data;
