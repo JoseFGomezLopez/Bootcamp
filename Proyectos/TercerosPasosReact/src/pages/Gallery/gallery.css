@@ -1,0 +1,14 @@
+.galleryContainer, .deleteUserContainer{
+    margin-top: 2.25rem;
+    border: .0625rem solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.cardComponentGallery{
+    
+    border: .0625rem solid white;
+    border-radius: 10px 20px;
+    
+}

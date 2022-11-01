@@ -1,0 +1,16 @@
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: lightslategray;
+}
+.navBar > a{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.navBar > a:hover{
+    border-right: .0625rem solid white; 
+    border-left: .0625rem solid white;
+}

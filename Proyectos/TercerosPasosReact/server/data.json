@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "cb597119-4728-4c70-940b-7db25ac8f845",
+      "name": "Andreea Marinela",
+      "age": "23",
+      "firstName": "Maricas",
+      "lastName": "Bucur",
+      "departament": "Diseño",
+      "rol": "UI",
+      "experience": "no experience",
+      "image": "no photo"
+    },
+    {
+      "id": "00defa00-d709-4f87-a413-c7b567f53280",
+      "name": "Jose",
+      "age": "39",
+      "firstName": "Gomez",
+      "lastName": "Lopez",
+      "departament": "Desarrolo",
+      "rol": "Web developer",
+      "experience": "no experience",
+      "image": "no photo"
+    }
+  ]
+}

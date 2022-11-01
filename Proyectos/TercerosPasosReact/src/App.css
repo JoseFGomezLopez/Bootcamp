@@ -1,0 +1,14 @@
+.navAppContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  background-color: lightsteelblue;
+  gap: 1rem;
+  text-align: center;
+}
+#root{
+  background-image: -webkit-linear-gradient(left,lightsteelblue,whitesmoke);
+  height: 100vh;
+}
+

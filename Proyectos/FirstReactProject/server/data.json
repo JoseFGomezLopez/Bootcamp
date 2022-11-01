@@ -1,0 +1,41 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Manolito",
+      "image": "Manolito",
+      "description": "Manolito"
+    },
+    {
+      "id": 2,
+      "name": "Pepito",
+      "image": "Pepito",
+      "description": "Pepito"
+    },
+    {
+      "id": 3,
+      "name": "Raquel",
+      "image": "Raquel",
+      "description": "Raquel"
+    },
+    {
+      "id": 4,
+      "name": "asdasfasfsdaf",
+      "image": "fsdafsadfsdfas",
+      "description": "asdfdsafsdfadfas"
+    },
+    {
+      "id": 5,
+      "name": "asdfsaF",
+      "image": "ASDFAS",
+      "description": "ASDFAS"
+    },
+    {
+      "id": "64189978-e44b-42f7-9243-b76facc3410a",
+      "name": "asdfsaF",
+      "image": "ASDFAS",
+      "description": "ASDFAS"
+    }
+  ],
+  "contacts": []
+}

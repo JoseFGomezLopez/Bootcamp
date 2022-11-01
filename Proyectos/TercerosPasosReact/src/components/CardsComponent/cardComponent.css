@@ -1,0 +1,19 @@
+.figureCardUser{
+    display: flex;
+    flex-flow: column wrap;
+    gap: .6rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.figureCardUser > h3:hover {
+    
+    border-radius: 10px 20px;
+   border: .0625rem solid white;
+
+}
+.figureCardUser>img{
+    height: 12.5rem;
+    width: 12.5rem;
+    text-align: center;
+}

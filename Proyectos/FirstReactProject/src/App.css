@@ -1,0 +1,12 @@
+.mainApp{
+    display: flex;
+    margin-top: 1rem;   
+    height: 76vh;
+    gap: .1rem;
+    width: 100vw;
+}
+.App > .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

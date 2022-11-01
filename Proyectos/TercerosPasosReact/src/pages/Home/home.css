@@ -1,0 +1,57 @@
+
+.userForm > fieldset{
+        height: 13.75rem;        
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: .3rem;
+} 
+.userForm{
+    border: .0625rem solid white;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.submitFormButton{
+    font: bold;
+    margin: .5rem;
+    background-color: inherit;
+    color:white;
+    padding: .4rem;
+    align-self: center;
+    text-align: center;
+    width: 6.25rem;
+    border: .125rem solid white;
+    border-radius : .625rem;
+}
+.submitFormButton:hover{
+    background-color: white;
+    color: black;
+}
+
+legend,fieldset{
+    color: whitesmoke;
+    text-align: center;
+}
+fieldset{
+    border: whitesmoke;
+}
+.userInputForm{
+    font: bolder black;
+    text-align: center;
+    margin-top: .1rem;
+    margin-bottom: .2rem;
+    border: .0625rem solid white;
+    width:18.75rem;
+    border-radius: .625rem;
+    transition: all 1s;
+}
+.userInputForm:hover, .userInputForm:target{
+    transform: scale(1.2);
+}
+figure{
+    text-align: center;
+    color: white;
+    background-color:  lightsteelblue;
+}
