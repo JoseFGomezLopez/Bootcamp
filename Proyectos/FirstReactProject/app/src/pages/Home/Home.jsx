@@ -1,6 +1,6 @@
 import "./home.css";
 import Parragraph from "../../components/Parragraph/Parragraph";
-import Figure from "../../components/Figure/figure";
+import Figure from "../../components/Figure/Figure";
 import FormContact from "../../components/FormContact/FormContact";
 
 const Home = () => {
