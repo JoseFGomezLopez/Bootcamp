@@ -1,0 +1,70 @@
+.formPublic {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  gap: 1rem;
+  height: 10rem;
+}
+.fieldsetFormPublic {
+  border: 2px solid white;
+  width: 37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  gap: 0.1rem;
+}
+.fieldsetFormPublic > input {
+  margin-bottom: 0.2rem;
+}
+.publicContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.previewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.previewContainer > .figure {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 36rem;
+  height: 15rem;
+  border: 0.0625rem solid white;
+  color: white;
+  font-variant: small-caps;
+}
+.fieldserPets {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+.fieldserPets > input {
+  width: 9rem;
+  object-fit: contain;
+}
+.fieldserPets > textarea {
+  width: 18.75rem;
+}
+
+@media screen and (max-width: 55.25rem) {
+  .previewContainer {
+    display: none;
+  }
+  .fieldsetFormPublic {
+    gap: 0.7rem;
+    flex-direction: column;
+  }
+  .fieldsetFormPublic > input {
+    margin-top: 0.025rem;
+  }
+}

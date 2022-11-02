@@ -81,31 +81,5 @@
       "description": "De una personalidad magnífica!"
     }
   ],
-  "contacts": [
-    {
-      "id": 1,
-      "contactName": "Iker",
-      "contactTelephone": "9841561651",
-      "contactEmail": "k@gmail.com"
-    },
-    {
-      "id": 2,
-      "contactName": "LKaura",
-      "contactTelephone": "5654",
-      "contactEmail": "da@gmaill.com"
-    },
-    {
-      "id": 3,
-      "contactName": "Sergio",
-      "contactTelephone": "987893267",
-      "contactEmail": "sergio@gmail.com"
-    },
-    {
-      "id": 4,
-      "contactName": "Maria",
-      "contactTelephone": "2652387452",
-      "contactEmail": "maria@gmail.com"
-    }
-    
-  ]
+  "contacts": []
 }

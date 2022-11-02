@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: unset;
+  color: white;
+}
+:root {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(157, 167, 180),
+    rgb(172, 182, 187)
+  );
+}

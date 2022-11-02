@@ -1,0 +1,102 @@
+.homeContainer {
+  background-color: inherit;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  height: 76vh;
+}
+aside {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  font-variant: small-caps;
+}
+.figureHome {
+  width: 80%;
+}
+.figureHome > .imageHome {
+  width: 100%;
+  border-radius: 50%;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.contactForm .contactFieldsetForm {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px 20px;
+  max-height: 10rem;
+}
+.contactForm .contactTextAreaForm {
+  height: 6rem;
+  border: unset;
+  border-radius: 5px 2px;
+  width: 16.75rem;
+}
+.buttonFormHome {
+  text-align: center;
+  width: 6.25rem;
+  align-self: center;
+  border: unset;
+  background-color: inherit;
+  color: white;
+  font-weight: 900;
+}
+.buttonFormHome:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  border-radius: 0.9375rem;
+}
+.contactInputForm {
+  border: unset;
+  border-radius: 0.9375rem;
+  width: 12.5rem;
+  height: 1.2rem;
+  text-align: center;
+}
+@media screen and (max-width: 55.25rem) {
+  .homeContainer {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow-y: scroll;
+    background-image: url("../../../server/Images/Tyson-Xena/DSCN0293.JPG");
+    background-size: cover;
+  }
+  .figureHome {
+    width: 0%;
+  }
+  .figureHome > .imageHome {
+    display: none;
+  }
+  .contactFieldsetForm {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+  .contactForm .contactFieldsetForm {
+    height: 31.25rem;
+    width: 100%;
+  }
+  .contactInputForm {
+    width: 7rem;
+  }
+  .contactForm .contactTextAreaForm {
+    width: 7rem;
+  }
+}
