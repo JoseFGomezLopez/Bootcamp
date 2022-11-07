@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a,
+a:visited,
+a:link {
+  color: unset;
+  text-decoration: unset;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  
+}
+.App > main {
+  min-height: 50vh;
+  
+}
+
+
+@media screen and (max-width:720px) {
+    .App{
+      width: 100vw;
+      height: 100vh;
+      justify-content: space-between;
+      align-items: center;  
+    }
+    .App > .main{
+       overflow-y: scroll;
+       align-self: center;  
+    }
+    
+    .App > .footerCustom{
+      align-self: flex-end;
+    }
+  }
+  
+  

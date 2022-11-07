@@ -1,0 +1,26 @@
+.figurePosters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 10.5rem;
+    height: 14rem;
+    margin:.6rem;
+    
+}
+.figurePosters:hover{
+    
+    opacity: .72;
+    border: .125rem solid whitesmoke;
+    border-radius: .625rem;
+}
+.figurePosters > a >img{
+   width: 10rem;
+   height: 12rem;
+   object-fit: contain;
+}
+button{
+    border: unset;
+    background-color: inherit;
+}

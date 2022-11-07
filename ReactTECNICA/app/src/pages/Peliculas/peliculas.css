@@ -1,0 +1,17 @@
+.moviesSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.selectContainer{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    margin: .5rem;
+}
+@media screen and (max-width:720px) {
+    .moviesSection{
+        height: 100%;
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,29 @@
+.figureInicio {
+  display: flex;
+  margin-right: 2rem;
+  margin-top: 1.7rem;
+  margin-bottom: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 6.75rem;
+  height: 9.5rem;
+  background-color: black;
+  background-image: url("../../assets/placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.h2Figure {
+  font-size: medium;
+  margin-left: -2.4rem;
+  margin-top: -4.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: black;
+}
+.figureInicio h1 {
+  color: white;
+  font-weight: 100;
+}

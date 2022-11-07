@@ -1,0 +1,7 @@
+.classNameDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: .225rem solid rgb(248, 244, 244);
+}

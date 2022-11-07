@@ -1,0 +1,19 @@
+.PopUp{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 29.5rem;
+    height: 29.5rem;
+    background-color: rgb(0, 130, 254);
+    border: .0625rem solid white ;
+    border-radius: 5px 10px;
+}
+.PopUp > button{
+    position: absolute;
+    top:.5rem;
+    color: white;
+    
+}

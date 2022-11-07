@@ -1,0 +1,30 @@
+ .sectionLoginPage{
+    margin-top: 2rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Cinematograf-Project3.jpg/200px-Cinematograf-Project3.jpg');
+    background-repeat: no-repeat;
+    background-position: 18.75rem; 
+    
+ }
+
+ .sectionLoginPage > input {
+    width: 15rem;
+    text-align: center;
+    background-color:#414141;
+    color: white;
+ }
+ .sectionLoginPage > button{
+    font-size: .9125rem;
+    width: 4rem;
+    padding: 1rem;
+ }
+ .sectionLoginPage > button:hover{
+    background-color: #414141;
+    color:white;
+    border-radius: .2125rem;
+}

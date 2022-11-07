@@ -1,0 +1,11 @@
+.sectionDetailCard{
+    margin-top: 2.5rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+.help{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    font-size: larger;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.help > button{
+    font-size: large;
+    font-variant: small-caps;
+    padding: .6rem;
+}
+
+.help > button:hover{
+    color: white;
+    background-color: #414141;
+    
+}
+.help > textarea {
+    width: 14.25rem;
+    height: 4rem;
+}

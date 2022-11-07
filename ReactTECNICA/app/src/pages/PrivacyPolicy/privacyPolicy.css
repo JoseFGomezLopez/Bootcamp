@@ -1,0 +1,10 @@
+.privacyPolicy{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-size: larger;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.seriesSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.divSelectContainer{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    margin: .5rem;
+}
+@media screen and (max-width:720px) {
+    .seriesSection{
+        height: 100%;
+        overflow-y: scroll;
+    }
+}

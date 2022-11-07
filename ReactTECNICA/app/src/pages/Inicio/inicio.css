@@ -1,0 +1,15 @@
+.inicioContainer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5rem;
+}
+@media screen and (max-width:720px) {
+    .inicioContainer{
+     
+     margin-left: 2rem;
+     justify-content: center;
+         
+}
+}

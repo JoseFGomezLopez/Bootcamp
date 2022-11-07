@@ -1,0 +1,68 @@
+.headerCustom{
+    z-index: 3;
+    position: sticky;
+    top: .001rem;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+}
+.containerTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 130, 254);
+    height: 4rem;
+    align-self: center;
+}
+.demoStreaming{
+    color: whitesmoke;
+    margin-left: 4.5rem;
+    font-size: 2.4rem;
+}
+.login, .freeTrial {
+    margin-right: 2rem;
+    color: whitesmoke;
+}
+.freeTrial{
+    padding: .6rem;
+    background-color: rgb(59, 60, 58);
+}
+.popularTitles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    background-color: #414141;
+    color: whitesmoke;
+    font-size: 1.7rem;
+}
+.popularTitlesText{
+   margin-left: 4.5rem;
+   margin-right: 4.5rem;
+}  
+@media screen and (max-width:720px) {
+    .demoStreaming{
+        font-size: 1.1rem;
+        margin-left: .6rem;
+    }
+    .freeTrial, .login{
+         margin:.5rem  
+    }
+    .popularTitlesText{
+        margin-left: .6rem;
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:290px) {
+   .buttonsLogin{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .login, .freeTrial{
+    font-size: .6rem;
+   } 
+   .freeTrial{
+    padding:.2rem;
+   }
+}
