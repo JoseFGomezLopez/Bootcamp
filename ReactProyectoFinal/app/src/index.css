@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public/static/Montserrat-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+a,
+a:link,
+a:visited {
+  text-decoration: unset;
+  color: inherit;
+}

@@ -1,0 +1,62 @@
+.loginSectionForm{
+
+    width: 25.0625rem;
+    height: 22.84rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}   
+.loginForm{
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    color:  #FB5A5A;
+    margin-right: .1rem;
+}
+.inputLoginForm{
+    background-color: #FFF;
+    width: 25rem;
+    height: 2.5rem;
+    border: 1px solid #DBDBDB;
+    border-radius: .5rem;
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+}
+.logo{
+
+    margin-bottom: 2rem;
+}
+.loginSectionForm > label{
+    
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+.chekboxAnchorContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .6rem;
+}
+.checkboxContainer > label{
+   margin-left: .3rem;
+}
+.inputSubmitButton{ 
+    align-self: center;
+    padding: .25rem .9375rem;
+    margin-top: .5rem;
+    width: 7.5625rem;
+    height: 1.875rem;
+    background-color: #262D34;
+    box-shadow: 0rem .125rem 0rem rgba(0,0,0,0.043);
+    border-radius: .5rem;
+    font-weight: 400;
+    font-size: .875rem;
+    text-align: center;
+    color: #FFF;
+}
+
+

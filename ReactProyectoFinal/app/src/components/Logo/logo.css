@@ -1,0 +1,32 @@
+.logoContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.U{
+  position: relative;  
+}
+.punto{
+    position: absolute;
+    top:1.5rem;
+    left: 1.25rem;
+}
+.uDcha{
+    position: absolute;
+    top: -15px;
+    left: 22px;
+    
+}
+.logoName{
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+ }
+.logoName > img {
+    margin-left: .3rem;
+}
+.y{
+    position: absolute;
+    top: 1rem; 
+}
