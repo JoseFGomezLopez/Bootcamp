@@ -1,0 +1,129 @@
+{
+  "Estudiantes": [
+    {
+      "id": 1,
+      "name": "Estudiante 01",
+      "userName": "Est01",
+      "email": "estudiante01@gmail.com",
+      "movil": 60378200,
+      "image": "./images/homeless.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Estudiante 02",
+      "userName": "Est02",
+      "email": "estudiante02@gmail.com",
+      "movil": 673457698,
+      "image": "./images/homeless2"
+    },
+    {
+      "id": 3,
+      "name": "Estudiante 03",
+      "userName": "Est03",
+      "email": "estudiante03@gmail.com",
+      "movil": 623832020,
+      "image": "./images/samspratt_homelesstech2.jpg"
+    },
+    {
+      "name": "Iker",
+      "apellidos": "Romero",
+      "userName": "@Ikerromero",
+      "email": "bmandrea98@gmail.com",
+      "movil": "123456790",
+      "image": "",
+      "id": "ae9a49fe-1f99-4f10-aa59-45364e12a0d8"
+    },
+    {
+      "name": "Dani",
+      "apellidos": "Recio",
+      "userName": "DRecio",
+      "email": "andrea_marinela@hotmail.es",
+      "movil": "789456123",
+      "image": "",
+      "id": "318d10c3-ecbb-445f-824f-a112f079ad6c"
+    },
+    {
+      "name": "José francisco",
+      "apellidos": "López",
+      "userName": "lkjasd",
+      "email": "bmandrea98@gmail.es",
+      "movil": "132456789",
+      "image": "",
+      "id": "0f106078-586a-4acd-b317-696b40b59e81"
+    },
+    {
+      "name": "kjladfsadf",
+      "apellidos": "fsadfsda",
+      "userName": "asdfsdf",
+      "email": "andrea_marinela@hotmail.es",
+      "movil": "123456789",
+      "image": "",
+      "id": "435cf2e9-6ee1-4002-ad85-8b93697bfc99"
+    },
+    {
+      "name": "jashfkjlgsadkfgtdsaif",
+      "apellidos": "asdlfnksdahfkdjsfhbsad",
+      "userName": "asdfsdafsadfa",
+      "email": "bmandrea98@gmail.com",
+      "movil": "123456789",
+      "image": "",
+      "id": "591bf329-7a80-4ffe-92b6-ac071154a6a2"
+    },
+    {
+      "name": "No name",
+      "apellidos": "Escalador",
+      "userName": "delValle",
+      "email": "ajsdfhsa@gmail.com",
+      "movil": "132159753",
+      "image": "",
+      "id": "4e93a082-a9a8-4158-9650-b800e1248ba0"
+    },
+    {
+      "name": "Tate",
+      "userName": "tate",
+      "email": "andrea_marinela@hotmail.es",
+      "movil": "123456789",
+      "image": "",
+      "id": "377dd646-4e79-41ca-ba10-86c94c81afc1"
+    }
+  ],
+  "Profesores": [
+    {
+      "id": 1,
+      "name": "Profesor 01",
+      "userName": "Prof01",
+      "email": "profesor01@gmail.com",
+      "movil": 620783220,
+      "image": "./images/SPLINTER.webp"
+    },
+    {
+      "name": "José francisco",
+      "apellidos": "López",
+      "userName": "Jose",
+      "email": "andrea_marinela@hotmail.es",
+      "movil": "658987812",
+      "image": "",
+      "id": "56b3e4c5-2d16-4b8e-8f6b-b36cd6574358"
+    },
+    {
+      "name": "Andreea",
+      "apellidos": "Marinela",
+      "userName": "@Andrea",
+      "email": "andrea_marinela@hotmail.es",
+      "movil": "753159963",
+      "image": "",
+      "id": "ff59ba30-cf0a-4247-a375-dcb707270ce9"
+    }
+  ],
+  "Cursos": [],
+  "EditarAcademia": [
+    {
+      "name": "Neoland",
+      "userName": "Jose",
+      "email": "Neoland@hotmail.es",
+      "movil": "658458512",
+      "image": "",
+      "id": "1"
+    }
+  ]
+}

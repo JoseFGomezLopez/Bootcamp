@@ -1,0 +1,12 @@
+.createrForm{
+    width: 25rem;
+    height: 31.1875rem;
+    background-color: #FFF;
+    box-shadow: 0 0 .5625rem rgba(0,0,0,.1);
+    border-radius: .3125rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+}

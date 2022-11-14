@@ -1,0 +1,80 @@
+.PopupUpdate{
+    width: 30rem;
+    height: 38.1875rem;
+    background-color: #FFF;
+    box-shadow: 0 0 .5625rem rgba(0,0,0,.1);
+    border-radius: .3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.editButton{
+    font-family: 'Poppins';
+    font-size: .675rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    width: 9.5rem;
+    height: 2rem;
+    padding: .3125rem 1rem;
+    background: #FFF;
+    border: 1px solid #262D34;
+    box-shadow: 0 2px 0 rgba(0,0,0,.43);
+    border-radius: .5rem;
+
+}
+.saveButton{
+    font-family: 'Poppins';
+    font-size: .675rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    width: 5.6875rem;
+    height: 2rem;
+    border-radius: .5rem;
+    padding: .3125rem 1rem;
+    gap: .5rem;
+    background-color: #262D34;
+    box-shadow: 0 .125rem 0 rgba(0,0,0,.43);
+    color:white;
+    margin-left: .5rem;
+}
+.nombreApellidosContainer{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+
+}
+.nombreContainer, .apellidosContainer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: .6875rem;
+    line-height: 1.5rem;
+    
+}
+.PopupUpdate > input {
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+}
+
+.nameUpdateInput{
+    width: 171px;
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    
+    
+}
+ .apellidosUpdateInput{
+    width: 181px;
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+
+}

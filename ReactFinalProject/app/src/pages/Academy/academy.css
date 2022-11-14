@@ -1,0 +1,48 @@
+.academyBody{
+    display: flex;
+}
+.academyTable{
+    width: calc(100vw - 223px);
+}
+.academyTable > button{
+    width:10.9375rem;
+    height: 3.125rem;
+    background-color: rgba(10,187,135,1);
+    border: 1px solid #0ABB87;
+    border-radius: .5rem;
+    color:#FFF;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    margin-top: 2.1875rem;
+    margin-left: 1.8125rem;
+}
+.academyTable > button > img {
+    margin-right: .3563rem;
+}
+
+.tablaAcademy{
+    margin-left: 2rem;
+    margin-top: 3.3125rem;
+    width: 61rem;
+}
+.tablaAcademy th, tr, td{
+    border-bottom: 1px solid rgba(205, 205, 205, 1);  
+    height: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.5rem;
+    color: rgba(0,0,0,1);
+    text-align: center;
+}
+.tablaAcademy th{
+    border-bottom: .0625rem solid black;
+}
+
+    
