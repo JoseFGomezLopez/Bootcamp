@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const { connect } = require('./database/connect');
-
+const { routerAbs } = require('./utils/routerAbs')
 
 const Movie = require('./models/movie')
 
@@ -21,14 +21,22 @@ router.get('/',async(req,res)=>{
 
 router.get('/:title',async(req,res)=>{
     const movies = await Movie.find();
-    console.log(movies);
     const title = req.params.title;
-    console.log(title);
     const objectFound = movies.filter((object)=>object.title === title);
-    if(objectFound===-1) {res.send('Not Found')
+    if(objectFound.length===0) {res.status(404).json('Not Found')
     }else{
-    res.send(objectFound[0].title);
+    res.status(200).json(objectFound);
 }})
+
+router.get('/:genre',async(req,res)=>{
+    
+    const {genre} = req.params;
+    const movies = await Movie.find({genre : genre});
+    if(movies){res.send('Not Found')
+    }else{
+    res.send(movies);    
+    }
+})
 
 server.use('/',router);
 
